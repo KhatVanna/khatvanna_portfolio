@@ -5,11 +5,11 @@ import Link from "next/link";
 import { SITE } from "@/data/site";
 
 const NAV_LINKS = [
+  { label: "Home", href: "/" },
   { label: "About", href: "/about-us" },
-  { label: "Services", href: "/services" },
-  { label: "Works", href: "/work" },
-  { label: "Blog", href: "/blog" },
-  { label: "Licenses", href: "#licenses" },
+  { label: "Skills", href: "/services" },
+  { label: "Projects", href: "/work" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const SOCIALS = [

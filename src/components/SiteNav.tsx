@@ -8,16 +8,14 @@ import { SITE } from "@/data/site";
 const NAV_LINKS = [
   { label: "Home", href: "/", number: "01" },
   { label: "About", href: "/about-us", number: "02" },
-  { label: "Services", href: "/services", number: "03" },
-  { label: "Works", href: "/work", number: "04" },
-  { label: "Blog", href: "/blog", number: "05" },
+  { label: "Skills", href: "/services", number: "03" },
+  { label: "Projects", href: "/work", number: "04" },
+  { label: "Contact", href: "/contact", number: "05" },
 ];
 
-const UTILITY_LINKS = [
-  { label: "404", href: "/404" },
-  { label: "Style guide", href: "/utility-pages/style-guide" },
-  { label: "Changelog", href: "/utility-pages/changelog" },
-  { label: "Password Protected", href: "/401" },
+/** Secondary links — keep out of the primary CV menu */
+const MORE_LINKS = [
+  { label: "Blog", href: "/blog" },
   { label: "Privacy Policy", href: "/privacy-policy" },
   { label: "Terms of Service", href: "/terms-of-service" },
 ];
@@ -184,12 +182,15 @@ function MenuOverlay({ open, onClose }: { open: boolean; onClose: () => void }) 
           <div>
             <div className="flex items-end justify-between border-b border-neutral-200 pb-3">
               <h2 className="text-[clamp(1.75rem,4vw,3.25rem)] font-semibold leading-none tracking-[-0.03em] text-neutral-400">
-                Utility Pages
+                More
                 <span className="ml-2 align-super text-[0.35em] font-medium">(06)</span>
               </h2>
             </div>
+            <p className="mt-6 max-w-[28ch] text-[13px] leading-relaxed text-neutral-500">
+              {SITE.role}. {SITE.tagline}
+            </p>
             <ul className="mt-8 space-y-3 md:mt-10 md:space-y-3.5">
-              {UTILITY_LINKS.map((item) => (
+              {MORE_LINKS.map((item) => (
                 <li key={item.label}>
                   <Link
                     href={item.href}
@@ -208,7 +209,7 @@ function MenuOverlay({ open, onClose }: { open: boolean; onClose: () => void }) 
             onClick={onClose}
             className="ml-auto inline-flex w-full max-w-[280px] items-center justify-between gap-6 rounded-full bg-black px-7 py-4 text-[15px] font-medium text-white transition-transform hover:scale-[1.02] sm:w-auto"
           >
-            <span>Contact Us</span>
+            <span>Contact Me</span>
             <span aria-hidden>→</span>
           </Link>
         </div>
