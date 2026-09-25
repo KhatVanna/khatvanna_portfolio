@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
+import { SITE } from "@/data/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -8,9 +9,8 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "Conax® — Bold Premier Creative Agency",
-  description:
-    "Conax bridges technology and intuitive human experience through high-end design and strategic engineering.",
+  title: SITE.title,
+  description: SITE.description,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

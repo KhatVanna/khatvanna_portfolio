@@ -136,7 +136,7 @@ export const zenithCase: CaseStudy = {
   resultsBody:
     "The relaunch of the Northland Studio website resulted in a 215% increase in session duration and a significant uptick in international inquiries.",
   quote:
-    "Conax didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
+    "Khat Vanna didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
   quoteAttribution: "Mark T. — CTO at Flow",
   stats: CASE_STATS,
   gallery: SHARED_GALLERY,
@@ -184,7 +184,7 @@ export const veloceCase: CaseStudy = {
   resultsBody:
     "The relaunch of the Northland Studio website resulted in a 215% increase in session duration and a significant uptick in international inquiries.",
   quote:
-    "Conax didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
+    "Khat Vanna didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
   quoteAttribution: "Mark T. — CTO at Flow",
   stats: CASE_STATS,
   gallery: [
@@ -240,7 +240,7 @@ export const auraCase: CaseStudy = {
   resultsBody:
     "The relaunch of the Northland Studio website resulted in a 215% increase in session duration and a significant uptick in international inquiries.",
   quote:
-    "Conax didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
+    "Khat Vanna didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
   quoteAttribution: "Mark T. — CTO at Flow",
   stats: CASE_STATS,
   gallery: [
@@ -295,7 +295,7 @@ export const stellarCase: CaseStudy = {
   resultsBody:
     "The relaunch of the Northland Studio website resulted in a 215% increase in session duration and a significant uptick in international inquiries.",
   quote:
-    "Conax didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
+    "Khat Vanna didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
   quoteAttribution: "Mark T. — CTO at Flow",
   stats: CASE_STATS,
   gallery: [
@@ -344,7 +344,7 @@ export const lumaCase: CaseStudy = {
   resultsBody:
     "The relaunch of the Northland Studio website resulted in a 215% increase in session duration and a significant uptick in international inquiries.",
   quote:
-    "Conax didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
+    "Khat Vanna didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
   quoteAttribution: "Mark T. — CTO at Flow",
   stats: CASE_STATS,
   gallery: [
@@ -399,7 +399,7 @@ export const northlandCase: CaseStudy = {
   resultsBody:
     "The relaunch of the Northland Studio website resulted in a 215% increase in session duration and a significant uptick in international inquiries.",
   quote:
-    "Conax didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
+    "Khat Vanna didn't just build us a website; they built a digital monument. They understood the nuances of our architectural philosophy and translated it into a fluid, digital experience.",
   quoteAttribution: "Mark T. — CTO at Flow",
   stats: CASE_STATS,
   gallery: [

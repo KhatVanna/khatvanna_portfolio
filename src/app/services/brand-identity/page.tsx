@@ -6,7 +6,7 @@ import SiteNav from "@/components/SiteNav";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 
 export const metadata: Metadata = {
-  title: "Brand Identity — Conax® Studio",
+  title: "Brand Identity — Khat Vanna",
   description:
     "We build comprehensive visual systems that capture the core essence and unique personality of your business.",
 };

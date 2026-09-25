@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { SITE } from "@/data/site";
 
 const NAV_LINKS = [
   { label: "Home", href: "/", number: "01" },
@@ -31,7 +32,7 @@ const LIGHT_SECTION_IDS = [
   "team",
   "blog",
   "faq",
-  "conax-features",
+  "features",
   "what-sets-us-apart",
   "speed-advantage",
   "newsletter",
@@ -73,10 +74,10 @@ function AnnouncementBar() {
     <div className="flex h-9 w-full items-center justify-center bg-black px-4 text-[11px] font-medium tracking-[0.18em] text-white uppercase">
       <p className="flex items-center gap-2">
         <span aria-hidden>•</span>
-        <span>New template drop in Feb</span>
+        <span>Open to new opportunities</span>
         <span aria-hidden>•</span>
-        <Link href="#learn" className="underline-offset-2 hover:underline">
-          Learn more
+        <Link href="/contact" className="underline-offset-2 hover:underline">
+          Contact me
         </Link>
         <span aria-hidden>•</span>
       </p>
@@ -112,22 +113,22 @@ function MenuOverlay({ open, onClose }: { open: boolean; onClose: () => void }) 
       <div className="flex items-start justify-between gap-4 px-5 py-5 text-black md:px-8 md:py-6 lg:px-10">
         <div className="flex items-start gap-8 lg:gap-14">
           <Link href="/" className="text-[1.35rem] font-semibold tracking-tight md:text-[1.5rem]">
-            Conax®
+            {SITE.name}
           </Link>
           <p className="hidden text-[11px] leading-relaxed tracking-wide sm:block">
-            Based in
+            {SITE.locationLine}
             <br />
-            Los Angeles, CA
+            {SITE.location}
           </p>
         </div>
 
         <div className="flex items-start gap-6 md:gap-10 lg:gap-14">
           <div className="hidden text-right text-[11px] leading-relaxed tracking-wide md:block">
-            <a href="tel:+12135550198" className="block hover:opacity-70">
-              +1 (213) 555-0198
+            <a href={SITE.phoneHref} className="block hover:opacity-70">
+              {SITE.phone}
             </a>
-            <a href="mailto:hello@conax.studio" className="block hover:opacity-70">
-              hello@conax.studio
+            <a href={`mailto:${SITE.email}`} className="block hover:opacity-70">
+              {SITE.email}
             </a>
           </div>
 
@@ -303,22 +304,22 @@ export default function SiteNav() {
               href="/"
               className="text-[1.35rem] font-semibold tracking-tight md:text-[1.5rem]"
             >
-              Conax®
+              {SITE.name}
             </Link>
             <p className="hidden text-[11px] leading-relaxed tracking-wide sm:block">
-              Based in
+              {SITE.locationLine}
               <br />
-              Los Angeles, CA
+              {SITE.location}
             </p>
           </div>
 
           <div className="flex items-start gap-6 md:gap-10 lg:gap-14">
             <div className="hidden text-right text-[11px] leading-relaxed tracking-wide md:block">
-              <a href="tel:+12135550198" className="block hover:opacity-80">
-                +1 (213) 555-0198
+              <a href={SITE.phoneHref} className="block hover:opacity-80">
+                {SITE.phone}
               </a>
-              <a href="mailto:hello@conax.studio" className="block hover:opacity-80">
-                hello@conax.studio
+              <a href={`mailto:${SITE.email}`} className="block hover:opacity-80">
+                {SITE.email}
               </a>
             </div>
 

@@ -12,7 +12,7 @@ import SiteNav from "@/components/SiteNav";
 import { northlandCase } from "@/data/case-studies";
 
 export const metadata: Metadata = {
-  title: "Northland Studio Website — Conax® Studio",
+  title: "Northland Studio Website — Khat Vanna",
   description:
     "Northland Studio Website case study — UI/UX and web development for an award-winning architectural collective, recognized by Awwwards Site of the Day.",
 };

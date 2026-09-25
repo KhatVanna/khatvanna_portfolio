@@ -21,9 +21,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getBlogPost(slug);
-  if (!post) return { title: "Blog — Conax® Studio" };
+  if (!post) return { title: "Blog — Khat Vanna" };
   return {
-    title: `${post.title.replace(/\.$/, "")} — Conax® Studio`,
+    title: `${post.title.replace(/\.$/, "")} — Khat Vanna`,
     description: BLOG_ARTICLE.lead,
   };
 }

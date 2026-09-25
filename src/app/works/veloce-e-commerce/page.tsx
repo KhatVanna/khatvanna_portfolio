@@ -12,7 +12,7 @@ import SiteNav from "@/components/SiteNav";
 import { veloceCase } from "@/data/case-studies";
 
 export const metadata: Metadata = {
-  title: "Veloce E-Commerce — Conax® Studio",
+  title: "Veloce E-Commerce — Khat Vanna",
   description:
     "Veloce E-Commerce case study — digital strategy and UI/UX for a high-performance commerce experience, recognized by Awwwards Site of the Day.",
 };

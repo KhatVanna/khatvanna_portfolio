@@ -105,7 +105,7 @@ export default function ApproachSection() {
             <div className="mt-auto">
               <Stars color="orange" />
               <p className="mt-4 text-[1.15rem] font-semibold leading-snug tracking-[-0.02em] md:text-[1.25rem]">
-                &ldquo;Conax transformed our outdated platform into a conversion
+                &ldquo;Khat Vanna transformed our outdated platform into a conversion
                 machine.&rdquo;
               </p>
 
@@ -177,7 +177,7 @@ export default function ApproachSection() {
             <div className="pointer-events-none absolute inset-y-0 right-0 w-[55%] sm:w-[52%]">
               <Image
                 src="/images/approach-phone.webp"
-                alt="Hand holding phone showing Conax product UI"
+                alt="Hand holding phone showing portfolio product UI"
                 fill
                 sizes="(max-width: 768px) 55vw, 30vw"
                 className="object-cover object-[70%_center] [mask-image:linear-gradient(to_bottom,black_70%,transparent)]"

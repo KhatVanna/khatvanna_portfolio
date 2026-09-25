@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { SITE } from "@/data/site";
 
 export default function StudioSection() {
   return (
@@ -17,7 +18,7 @@ export default function StudioSection() {
         {/* Giant STUDIO watermark */}
         <div className="relative mb-8 overflow-hidden md:mb-10">
           <h1 className="flex items-center text-[clamp(4.5rem,18vw,14rem)] font-semibold leading-none tracking-[-0.05em] text-black/8 uppercase">
-            <span>Studio</span>
+            <span>Portfolio</span>
             <span aria-hidden className="ml-2 inline-flex text-[0.55em] leading-none">
               →
             </span>
@@ -26,13 +27,13 @@ export default function StudioSection() {
           <div className="relative z-[1] mt-[-0.6em] grid grid-cols-1 gap-4 sm:grid-cols-2 md:mt-[-0.35em] md:grid-cols-4 md:gap-6">
             <p className="flex items-center gap-2 text-[12px] font-medium tracking-tight md:text-[13px]">
               <span className="inline-block h-3 w-px bg-black" aria-hidden />
-              Conax Studio
+              {SITE.name}
             </p>
             <p className="text-[12px] leading-snug text-neutral-700 md:text-[13px]">
-              The Valuable we will provide for you
+              {SITE.role} portfolio
             </p>
             <p className="text-[12px] font-medium tracking-tight md:text-[13px]">
-              76+ Project
+              Selected work
             </p>
             <div className="hidden md:block" />
           </div>
@@ -53,7 +54,7 @@ export default function StudioSection() {
             <Image src="/images/studio/studio-0.webp" alt="Workspace" fill sizes="20vw" className="object-cover grayscale" />
           </div>
           <div className="relative col-span-2 row-span-2 min-h-[280px] overflow-hidden rounded-2xl bg-neutral-200 md:min-h-[420px]">
-            <Image src="/images/studio/studio-4.webp" alt="Color collaboration" fill sizes="40vw" className="object-cover" priority />
+            <Image src={SITE.photo} alt={SITE.photoAlt} fill sizes="40vw" className="object-cover" priority />
           </div>
 
           <div className="relative col-span-2 aspect-video overflow-hidden rounded-2xl bg-neutral-200">

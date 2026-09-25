@@ -29,8 +29,8 @@ export default function WhatWeDoSection() {
             What We Do
           </p>
           <p className="max-w-[36ch] text-[clamp(1.25rem,2.4vw,1.85rem)] font-medium leading-snug tracking-[-0.02em] text-neutral-400 md:col-span-3 md:col-start-2 lg:max-w-[42ch]">
-            At Conax, we believe that great design is invisible; it should feel like a natural
-            extension of the user&apos;s intent.
+            I believe great design is invisible; it should feel like a natural extension of the
+            user&apos;s intent.
           </p>
         </div>
 

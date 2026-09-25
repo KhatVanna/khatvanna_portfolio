@@ -10,7 +10,7 @@ const FAQS = [
   },
   {
     q: "Do you offer post-launch support?",
-    a: "Conax offers tiered Post-Launch Evolution packages that include everything from security patches and technical maintenance to iterative UX improvements.",
+    a: "I offer post-launch support options that include security updates, technical maintenance, and iterative UX improvements — scoped to each project.",
   },
   {
     q: "Can you work with our existing dev team?",

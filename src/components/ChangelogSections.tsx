@@ -2,12 +2,12 @@ const ENTRIES = [
   {
     date: "12 July, 2026",
     version: "V2.0.0",
-    body: "Conax has been updated.\nNew features are coming soon as soon as possible.",
+    body: "Rebranded the site as the personal portfolio and CV of Khat Vanna.\nUpdated copy, contact details, and profile sections across the template.",
   },
   {
     date: "12 June, 2026",
     version: "V1.0.0",
-    body: "Conax has been updated.\nNew features are coming soon as soon as possible.",
+    body: "Initial portfolio template release.\nBaseline layout, case studies, and utility pages.",
   },
 ] as const;
 

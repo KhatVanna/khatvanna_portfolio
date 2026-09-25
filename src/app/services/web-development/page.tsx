@@ -6,7 +6,7 @@ import SiteNav from "@/components/SiteNav";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 
 export const metadata: Metadata = {
-  title: "Web Development — Conax® Studio",
+  title: "Web Development — Khat Vanna",
   description:
     "Our team translates high-end designs into high-performance digital products using clean, scalable code.",
 };

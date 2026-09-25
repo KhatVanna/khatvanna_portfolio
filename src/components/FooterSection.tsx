@@ -2,6 +2,7 @@
 
 import { type FormEvent, useState } from "react";
 import Link from "next/link";
+import { SITE } from "@/data/site";
 
 const NAV_LINKS = [
   { label: "About", href: "/about-us" },
@@ -53,22 +54,22 @@ export default function FooterSection() {
             </p>
             <div className="mt-6 space-y-1">
               <a
-                href="tel:+12135550198"
+                href={SITE.phoneHref}
                 className="block text-[clamp(1.35rem,2.5vw,1.85rem)] font-semibold tracking-[-0.02em] transition-opacity hover:opacity-80"
               >
-                +1 (213) 555-0198
+                {SITE.phone}
               </a>
               <a
-                href="mailto:hello@conax.studio"
+                href={`mailto:${SITE.email}`}
                 className="block text-[clamp(1.35rem,2.5vw,1.85rem)] font-semibold tracking-[-0.02em] transition-opacity hover:opacity-80"
               >
-                hello@conax.studio
+                {SITE.email}
               </a>
             </div>
             <p className="mt-8 text-[13px] leading-relaxed text-white/45">
-              Based in
+              {SITE.locationLine}
               <br />
-              <span className="text-white">Los Angeles, CA</span>
+              <span className="text-white">{SITE.location}</span>
             </p>
           </div>
 
@@ -109,7 +110,7 @@ export default function FooterSection() {
                 type="submit"
                 className="inline-flex min-w-[180px] items-center justify-center rounded-full bg-white px-7 py-3.5 text-sm font-medium text-black transition-transform hover:scale-[1.03]"
               >
-                Contact Us
+                Contact Me
               </button>
             </form>
 
@@ -181,7 +182,7 @@ export default function FooterSection() {
         className="pointer-events-none absolute inset-x-0 bottom-0 select-none overflow-hidden pb-2"
       >
         <p className="whitespace-nowrap text-center text-[clamp(5rem,18vw,14rem)] font-semibold leading-none tracking-[-0.05em] text-white/[0.06]">
-          Conax®
+          {SITE.name}
         </p>
       </div>
     </footer>

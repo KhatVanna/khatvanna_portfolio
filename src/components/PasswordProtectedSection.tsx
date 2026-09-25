@@ -2,6 +2,7 @@
 
 import { type FormEvent, useState } from "react";
 import { useRouter } from "next/navigation";
+import { SITE } from "@/data/site";
 
 export default function PasswordProtectedSection() {
   const router = useRouter();
@@ -15,7 +16,7 @@ export default function PasswordProtectedSection() {
       return;
     }
     // Demo unlock — template showcase only
-    if (password.trim().toLowerCase() === "conax") {
+    if (password.trim().toLowerCase() === SITE.password) {
       setError(false);
       router.push("/");
       return;

@@ -39,7 +39,7 @@ const PROJECTS = [
 ];
 
 const PARTNER_ICONS = [
-  // Simple geometric SVGs matching Conax partner row style
+  // Simple geometric SVGs matching partner row style
   (props: { className?: string }) => (
     <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" strokeWidth="1.6" {...props}>
       <circle cx="20" cy="20" r="12" />
@@ -178,7 +178,7 @@ export default function WorksSection() {
 
           <h2 className="relative z-[2] text-[clamp(2.75rem,9vw,7rem)] font-semibold leading-[0.92] tracking-[-0.045em] uppercase">
             <span className="block">More Than</span>
-            <span className="block">&ldquo;26 Conax</span>
+            <span className="block">&ldquo;26+ Builds</span>
             <span className="block text-[#ff5a1f]">Built</span>
             <span className="block">Several</span>
             <span className="block">Digital</span>
@@ -303,8 +303,8 @@ export default function WorksSection() {
 
           <div className="mt-12 grid grid-cols-1 gap-6 border-t border-black/10 pt-10 md:mt-16 md:grid-cols-2 md:gap-12 md:pt-12">
             <p className="max-w-[42ch] text-[15px] leading-relaxed text-neutral-600 md:text-base">
-              At Conax, we pride ourselves on a versatile collaborative approach that meet
-              requirements of Fortune 500 enterprises.
+              As Khat Vanna, I take a versatile, collaborative approach — from founders to
+              established teams who need design and development in one lane.
             </p>
             <p className="max-w-[42ch] text-[15px] leading-relaxed text-neutral-600 md:text-base">
               Our mission is to serve as a strategic catalyst, leveraging cutting-edge technology

@@ -5,22 +5,22 @@ import Image from "next/image";
 
 const TESTIMONIALS = [
   {
-    headline: "The team at Conax is world-class. They understood our vision instantly.",
-    body: "The team at Conax is truly world-class, operating less like an outside agency and more like a core part of our internal leadership. They possessed a rare ability to grasp our complex technical vision instantly, translating abstract ideas into a high-fidelity digital reality that exceeded our highest expectations.",
+    headline: "Khat Vanna is world-class. They understood our vision instantly.",
+    body: "Working with Khat Vanna felt less like hiring an outside vendor and more like adding a core part of our team. They grasped our complex technical vision instantly and translated abstract ideas into a high-fidelity digital reality that exceeded our expectations.",
     rating: "5.0/5",
     name: "Mark T. - Cto At Flow",
     avatar: "/images/avatar-1.webp",
   },
   {
     headline: "A rare blend of artistic talent and technical prowess.",
-    body: "Finding a partner that balances high-level creative direction with rigorous engineering is incredibly rare, but Conax delivers exactly that—a rare blend of artistic talent and technical prowess. They didn't just make our platform look beautiful; they built a robust, scalable system that has completely redefined how our customers interact with the Bloom brand.",
+    body: "Finding someone who balances high-level creative direction with rigorous engineering is incredibly rare, but Khat Vanna delivers exactly that. They didn't just make our platform look beautiful; they built a robust, scalable system that has completely redefined how our customers interact with the Bloom brand.",
     rating: "5.0/5",
     name: "Elena R. - Founder Of Bloom",
     avatar: "/images/avatar-2.webp",
   },
   {
     headline: "The ROI on our redesign was evident within the first month.",
-    body: "We approached Conax with a need for a visual refresh, but what we received was a complete strategic overhaul of our user journey. The ROI on our redesign was evident within the very first month, as we saw a measurable spike in conversion rates and a significant decrease in user friction across the board.",
+    body: "We approached Khat Vanna with a need for a visual refresh, but what we received was a complete strategic overhaul of our user journey. The ROI on our redesign was evident within the very first month, with a measurable spike in conversion rates and less user friction across the board.",
     rating: "5.0/5",
     name: "David K. - Marketing Director At Orbit",
     avatar: "/images/avatar-3.webp",

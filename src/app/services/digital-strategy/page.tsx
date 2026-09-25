@@ -6,7 +6,7 @@ import SiteNav from "@/components/SiteNav";
 import WhatWeDoSection from "@/components/WhatWeDoSection";
 
 export const metadata: Metadata = {
-  title: "Digital Strategy — Conax® Studio",
+  title: "Digital Strategy — Khat Vanna",
   description:
     "We provide the data-driven roadmap necessary to navigate the competitive landscape.",
 };

@@ -39,9 +39,9 @@ const FEATURES = [
   },
 ];
 
-export default function ConaxFeaturesSection() {
+export default function FeaturesSection() {
   return (
-    <section id="conax-features" className="relative overflow-hidden bg-white text-black">
+    <section id="features" className="relative overflow-hidden bg-white text-black">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0 z-0 hidden grid-cols-4 md:grid"
@@ -57,7 +57,7 @@ export default function ConaxFeaturesSection() {
           <div className="md:col-span-1">
             <p className="flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
               <span className="inline-block h-3 w-px bg-black" aria-hidden />
-              Conax Features
+              Core Capabilities
             </p>
           </div>
 

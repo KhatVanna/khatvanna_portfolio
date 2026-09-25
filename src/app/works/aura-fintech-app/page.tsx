@@ -12,7 +12,7 @@ import SiteNav from "@/components/SiteNav";
 import { auraCase } from "@/data/case-studies";
 
 export const metadata: Metadata = {
-  title: "Aura Fintech App — Conax® Studio",
+  title: "Aura Fintech App — Khat Vanna",
   description:
     "Aura Fintech App case study — digital strategy and brand identity for a high-growth fintech product, recognized by Awwwards Site of the Day.",
 };

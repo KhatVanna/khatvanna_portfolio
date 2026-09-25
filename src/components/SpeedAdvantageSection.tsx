@@ -80,7 +80,7 @@ export default function SpeedAdvantageSection() {
             <div className="relative h-[140px] overflow-hidden md:col-span-2 md:col-start-3 md:h-[180px]">
               <p className="mb-4 flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
                 <span className="inline-block h-3 w-px bg-black" aria-hidden />
-                Conax Studio
+                Khat Vanna
               </p>
               <div
                 className="will-change-transform"

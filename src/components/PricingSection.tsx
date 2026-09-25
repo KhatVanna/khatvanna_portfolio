@@ -21,7 +21,7 @@ const PLANS = [
   },
   {
     id: "02",
-    title: "The Agency Partner",
+    title: "The Partner Plan",
     description:
       "Our most requested tier for established brands looking to redefine their digital presence or scale their current ecosystem.",
     features: [

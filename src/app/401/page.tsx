@@ -3,7 +3,7 @@ import PasswordProtectedSection from "@/components/PasswordProtectedSection";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Protected page — Conax® Studio",
+  title: "Protected page — Khat Vanna",
   description: "This page is protected by password. Please enter the password to access content.",
 };
 

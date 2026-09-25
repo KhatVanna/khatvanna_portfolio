@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import AboutNewsletterSection from "@/components/AboutNewsletterSection";
 import AboutTeamSection from "@/components/AboutTeamSection";
 import AwardsSection from "@/components/AwardsSection";
-import ConaxFeaturesSection from "@/components/ConaxFeaturesSection";
+import FeaturesSection from "@/components/FeaturesSection";
 import FooterSection from "@/components/FooterSection";
 import PhilosophySection from "@/components/PhilosophySection";
 import SiteNav from "@/components/SiteNav";
@@ -11,9 +11,9 @@ import StudioSection from "@/components/StudioSection";
 import WhatSetsUsApartSection from "@/components/WhatSetsUsApartSection";
 
 export const metadata: Metadata = {
-  title: "About Us — Conax® Studio",
+  title: "About Us — Khat Vanna",
   description:
-    "Conax Studio — the valuable we will provide for you. 76+ projects delivered.",
+    "About Khat Vanna — designer and developer portfolio. Selected work and capabilities.",
 };
 
 export default function AboutUsPage() {
@@ -22,7 +22,7 @@ export default function AboutUsPage() {
       <SiteNav />
       <StudioSection />
       <PhilosophySection />
-      <ConaxFeaturesSection />
+      <FeaturesSection />
       <WhatSetsUsApartSection />
       <AwardsSection />
       <SpeedAdvantageSection />

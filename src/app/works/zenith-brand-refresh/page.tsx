@@ -12,7 +12,7 @@ import SiteNav from "@/components/SiteNav";
 import { zenithCase } from "@/data/case-studies";
 
 export const metadata: Metadata = {
-  title: "Zenith Brand Refresh — Conax® Studio",
+  title: "Zenith Brand Refresh — Khat Vanna",
   description:
     "Northland Studio case study — a virtual gallery experience rooted in digital brutalism, recognized by Awwwards Site of the Day.",
 };

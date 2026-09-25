@@ -136,7 +136,7 @@ export default function BlogSection() {
               The Blog
             </p>
             <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-none tracking-[-0.04em] md:absolute md:left-1/2 md:-translate-x-1/2">
-              Conax News
+              Insights
             </h2>
             <span className="w-[5.5rem] shrink-0" aria-hidden />
           </div>

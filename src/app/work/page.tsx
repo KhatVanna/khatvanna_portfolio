@@ -5,9 +5,9 @@ import WorkGridSection from "@/components/WorkGridSection";
 import WorkHeroSection from "@/components/WorkHeroSection";
 
 export const metadata: Metadata = {
-  title: "Work — Conax® Studio",
+  title: "Work — Khat Vanna",
   description:
-    "Explore a curated gallery of Conax projects — brand systems, digital products, and high-end craftsmanship.",
+    "Explore a curated gallery of projects — brand systems, digital products, and high-end craftsmanship.",
 };
 
 export default function WorkPage() {

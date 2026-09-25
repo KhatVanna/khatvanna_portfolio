@@ -12,7 +12,7 @@ import SiteNav from "@/components/SiteNav";
 import { stellarCase } from "@/data/case-studies";
 
 export const metadata: Metadata = {
-  title: "Stellar SaaS Dashboard — Conax® Studio",
+  title: "Stellar SaaS Dashboard — Khat Vanna",
   description:
     "Stellar SaaS Dashboard case study — brand identity and UI/UX for Northland Studio, recognized by Awwwards Site of the Day.",
 };

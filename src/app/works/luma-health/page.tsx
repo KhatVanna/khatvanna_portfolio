@@ -12,7 +12,7 @@ import SiteNav from "@/components/SiteNav";
 import { lumaCase } from "@/data/case-studies";
 
 export const metadata: Metadata = {
-  title: "Luma Health — Conax® Studio",
+  title: "Luma Health — Khat Vanna",
   description:
     "Luma Health case study — brand identity and digital strategy for Northland Studio, recognized by Awwwards Site of the Day.",
 };

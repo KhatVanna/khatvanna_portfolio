@@ -35,7 +35,7 @@ export default function NotFoundSection() {
             <p className="max-w-[32ch] text-[15px] leading-relaxed text-neutral-700 md:text-base">
               Page not found. The request URL doesn&rsquo;t exist.
               <br />
-              Please go back to Conax home.
+              Please go back to the home page.
             </p>
             <Link
               href="/"

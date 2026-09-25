@@ -6,9 +6,9 @@ import FooterSection from "@/components/FooterSection";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Blog — Conax® Studio",
+  title: "Blog — Khat Vanna",
   description:
-    "Insights on design, development, and digital craft from the Conax studio.",
+    "Notes on design, development, and digital craft from Khat Vanna.",
 };
 
 export default function BlogPage() {

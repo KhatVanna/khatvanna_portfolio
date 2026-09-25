@@ -1,42 +1,28 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SITE } from "@/data/site";
 
-const DEPARTMENTS = [
-  { id: "01", label: "Design" },
-  { id: "02", label: "Engineering" },
-  { id: "03", label: "Operations" },
-  { id: "04", label: "Strategy" },
+const FOCUS = [
+  { id: "01", label: "UI / UX Design" },
+  { id: "02", label: "Web Development" },
+  { id: "03", label: "Brand Identity" },
+  { id: "04", label: "Digital Strategy" },
 ];
 
-const MEMBERS = [
+const HIGHLIGHTS = [
   {
-    name: "Aris Thorne",
-    role: "Creative Technologist",
-    image: "/images/team/member-0.webp",
+    title: "Design Systems",
+    body: "Clear visual language, typography, and components that scale across products.",
   },
   {
-    name: "Chloe Whitmore",
-    role: "Director of Client Success",
-    image: "/images/team/member-1.webp",
+    title: "Product Interfaces",
+    body: "User-centered flows and interaction details that feel fast and intentional.",
   },
   {
-    name: "Viktor Petrov",
-    role: "Lead UX Researcher",
-    image: "/images/team/member-2.webp",
-  },
-  {
-    name: "Sarah Jenkins",
-    role: "Senior UX Researcher",
-    image: "/images/team/member-3.webp",
-  },
-  {
-    name: "David Jones",
-    role: "Lead Full-Stack Engineer",
-    image: "/images/team/member-4.webp",
+    title: "Front-End Craft",
+    body: "Performant Next.js and Tailwind builds with motion that supports the story.",
   },
 ];
-
-const AVATAR_STACK = MEMBERS.slice(0, 4).map((m) => m.image);
 
 export default function TeamSection() {
   return (
@@ -52,49 +38,35 @@ export default function TeamSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1600px] px-5 py-16 md:px-8 md:py-20 lg:px-10 lg:py-24">
-        {/* Header row */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-6 lg:gap-8">
           <div className="md:col-span-1">
             <p className="flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
               <span className="inline-block h-3 w-px bg-black" aria-hidden />
-              The Team
+              Profile
             </p>
           </div>
 
           <div className="md:col-span-2">
             <h2 className="text-[clamp(2.75rem,7vw,5.5rem)] font-semibold leading-[0.95] tracking-[-0.04em]">
-              Conax® Member
+              {SITE.name}
             </h2>
-
-            <div className="mt-6 flex items-center">
-              {AVATAR_STACK.map((src, i) => (
-                <div
-                  key={src}
-                  className="relative h-11 w-11 overflow-hidden rounded-full border-2 border-white bg-neutral-200"
-                  style={{ marginLeft: i === 0 ? 0 : -10, zIndex: AVATAR_STACK.length - i }}
-                >
-                  <Image src={src} alt="" fill sizes="44px" className="object-cover" />
-                </div>
-              ))}
-              <div
-                className="relative z-0 flex h-11 w-11 items-center justify-center rounded-full border-2 border-white bg-[#e4e4e4] text-[11px] font-semibold"
-                style={{ marginLeft: -10 }}
-              >
-                +5
-              </div>
-            </div>
-            <p className="mt-3 text-[11px] tracking-[0.14em] text-neutral-500 uppercase">
-              Most Talented People
+            <p className="mt-4 text-[15px] font-medium tracking-tight text-neutral-600">
+              {SITE.role}
+            </p>
+            <p className="mt-3 max-w-[42ch] text-[13px] leading-relaxed text-neutral-600">
+              A focused practice combining design, development, and strategy — built to
+              ship polished digital work with clarity and care.
             </p>
           </div>
 
           <div className="flex flex-col justify-between gap-10 md:col-span-1">
             <p className="max-w-[28ch] text-[13px] leading-relaxed text-neutral-600 md:ml-auto md:text-right">
-              A diverse team of designers, developers, and strategists obsessed with
-              perfection.
+              {SITE.locationLine}
+              <br />
+              <span className="font-medium text-black">{SITE.location}</span>
             </p>
             <ul className="space-y-2 md:text-right">
-              {DEPARTMENTS.map((d) => (
+              {FOCUS.map((d) => (
                 <li
                   key={d.id}
                   className="text-[12px] font-medium tracking-[0.12em] uppercase text-neutral-700"
@@ -106,80 +78,60 @@ export default function TeamSection() {
           </div>
         </div>
 
-        {/* Members grid */}
-        <div className="relative mt-14 md:mt-20">
-          <span
-            aria-hidden
-            className="pointer-events-none absolute top-[40%] -left-1 hidden -translate-y-1/2 text-[clamp(4rem,10vw,8rem)] font-semibold leading-none text-black/8 lg:block"
-          >
-            (12)
-          </span>
+        <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-[1.1fr_1.9fr] lg:gap-8 md:mt-20">
+          <article className="relative aspect-4/5 overflow-hidden rounded-2xl bg-white md:min-h-[520px] lg:aspect-auto">
+            <Image
+              src={SITE.photo}
+              alt={SITE.photoAlt}
+              fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
+              className="object-cover object-top"
+              priority={false}
+            />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/95 to-transparent px-5 pt-20 pb-5">
+              <div className="border-l-2 border-black pl-3">
+                <h3 className="text-lg font-semibold tracking-tight">{SITE.name}</h3>
+                <p className="mt-0.5 text-sm text-neutral-500">{SITE.role}</p>
+              </div>
+            </div>
+          </article>
 
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_3fr] lg:gap-6">
+          <div className="flex flex-col justify-between gap-8">
             <div>
-              <h3 className="max-w-[12ch] text-[clamp(1.5rem,2.4vw,2rem)] font-semibold leading-[1.1] tracking-[-0.02em] uppercase">
-                The Minds Behind Pixels
+              <h3 className="max-w-[16ch] text-[clamp(1.5rem,2.4vw,2rem)] font-semibold leading-[1.1] tracking-[-0.02em] uppercase">
+                What I Bring
               </h3>
-              <p className="mt-4 max-w-[28ch] text-[13px] leading-relaxed text-neutral-600">
-                A diverse team of designers, developers, and strategists obsessed with
-                perfection.
+              <p className="mt-4 max-w-[42ch] text-[13px] leading-relaxed text-neutral-600">
+                End-to-end ownership from concept and identity through interface design
+                and production-ready front-end delivery.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-5">
-              {MEMBERS.map((member) => (
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+              {HIGHLIGHTS.map((item, i) => (
                 <article
-                  key={member.name}
-                  className="relative aspect-4/5 overflow-hidden rounded-2xl bg-white"
+                  key={item.title}
+                  className="flex flex-col justify-between rounded-2xl bg-white p-5 md:p-6"
                 >
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 25vw"
-                    className="object-cover object-top"
-                  />
-                  <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/95 to-transparent px-4 pt-16 pb-4">
-                    <div className="border-l-2 border-black pl-3">
-                      <h4 className="text-sm font-semibold tracking-tight">{member.name}</h4>
-                      <p className="mt-0.5 text-[12px] text-neutral-500">{member.role}</p>
-                    </div>
+                  <span className="text-[11px] tracking-[0.14em] text-neutral-400 uppercase">
+                    /0{i + 1}
+                  </span>
+                  <div className="mt-10">
+                    <h4 className="text-[15px] font-semibold tracking-tight">{item.title}</h4>
+                    <p className="mt-2 text-[13px] leading-relaxed text-neutral-600">
+                      {item.body}
+                    </p>
                   </div>
                 </article>
               ))}
-
-              <article className="relative flex aspect-4/5 flex-col justify-between rounded-2xl bg-white p-5 md:p-6">
-                <div className="flex items-center">
-                  {AVATAR_STACK.slice(0, 3).map((src, i) => (
-                    <div
-                      key={src}
-                      className="relative h-9 w-9 overflow-hidden rounded-full border-2 border-white bg-neutral-200"
-                      style={{ marginLeft: i === 0 ? 0 : -8, zIndex: 3 - i }}
-                    >
-                      <Image src={src} alt="" fill sizes="36px" className="object-cover" />
-                    </div>
-                  ))}
-                  <span className="ml-2 text-sm font-semibold">+5</span>
-                </div>
-
-                <div>
-                  <p className="mb-2 flex items-center gap-2 text-[11px] font-medium tracking-[0.12em] uppercase text-neutral-500">
-                    <span className="inline-block h-3 w-px bg-black" aria-hidden />
-                    Talented Behinds
-                  </p>
-                  <h4 className="max-w-[10ch] text-[clamp(1.35rem,2.2vw,1.75rem)] font-semibold leading-[1.1] tracking-[-0.02em]">
-                    View Members Behind
-                  </h4>
-                </div>
-
-                <Link
-                  href="#team"
-                  className="inline-flex w-full items-center justify-center rounded-full bg-black px-5 py-3.5 text-sm font-medium text-white transition-transform hover:scale-[1.02]"
-                >
-                  View All Members
-                </Link>
-              </article>
             </div>
+
+            <Link
+              href="/contact"
+              className="inline-flex w-full max-w-[280px] items-center justify-center rounded-full bg-black px-5 py-3.5 text-sm font-medium text-white transition-transform hover:scale-[1.02] sm:ml-auto"
+            >
+              Get in Touch
+            </Link>
           </div>
         </div>
       </div>

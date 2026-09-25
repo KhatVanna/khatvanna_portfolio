@@ -4,9 +4,9 @@ import SiteNav from "@/components/SiteNav";
 import TermsOfServiceSections from "@/components/TermsOfServiceSections";
 
 export const metadata: Metadata = {
-  title: "Terms Of Service — Conax® Studio",
+  title: "Terms Of Service — Khat Vanna",
   description:
-    "Terms of Service agreement for engaging Conax creative and digital services.",
+    "Terms of Service for using this portfolio site and engaging Khat Vanna for creative and digital services.",
 };
 
 export default function TermsOfServicePage() {

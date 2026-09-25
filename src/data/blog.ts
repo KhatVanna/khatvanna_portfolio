@@ -24,7 +24,7 @@ export const BLOG_CATEGORIES: BlogCategory[] = [
 ];
 
 export const BLOG_ARTICLE = {
-  lead: 'In the early days of the web, animation was often dismissed as a distraction—a decorative layer of "fluff" that slowed down performance. At Conax, we view motion differently. We believe that movement is a fundamental component of the user interface, serving as a silent guide that provides spatial context, reinforces brand hierarchy, and reduces cognitive load.',
+  lead: 'In the early days of the web, animation was often dismissed as a distraction—a decorative layer of "fluff" that slowed down performance. In my practice, I view motion differently. Movement is a fundamental part of the interface — a silent guide that provides spatial context, reinforces hierarchy, and reduces cognitive load.',
   sections: [
     {
       heading: "Micro-Interactions as Feedback Loops",
@@ -48,9 +48,9 @@ export const BLOG_ARTICLE = {
       ],
     },
     {
-      heading: "The Conax Standard: Performance-First Motion",
+      heading: "The Performance Standard: Motion Without Compromise",
       paragraphs: [
-        "While these trends are powerful, we never prioritize motion at the expense of performance. Every animation we engineer is optimized for 60fps (frames per second) and utilizes hardware acceleration to ensure that the experience is as fast as it is beautiful.",
+        "While these trends are powerful, I never prioritize motion at the expense of performance. Every animation I ship is optimized for 60fps and uses hardware acceleration so the experience stays as fast as it is polished.",
       ],
     },
   ],
@@ -146,7 +146,7 @@ export function getBlogPost(slug: string) {
   return BLOG_POSTS.find((p) => p.slug === slug);
 }
 
-/** Related posts shown under a single article (Conax CMS order). */
+/** Related posts shown under a single article. */
 export function getRelatedPosts(slug: string, limit = 4) {
   const preferred = [
     "how-ai-is-redefining-the-next-generation-of-user-interfaces",

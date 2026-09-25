@@ -4,8 +4,8 @@ import FooterSection from "@/components/FooterSection";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Changelog — Conax® Studio",
-  description: "Product updates and version history for the Conax template.",
+  title: "Changelog — Khat Vanna",
+  description: "Product updates and version history for the Khat Vanna portfolio site.",
 };
 
 export default function ChangelogPage() {

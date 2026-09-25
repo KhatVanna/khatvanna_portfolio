@@ -7,9 +7,9 @@ import FooterSection from "@/components/FooterSection";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Contact — Conax® Studio",
+  title: "Contact — Khat Vanna",
   description:
-    "Ready to be our next success story? Get in touch with Conax for brand, product, and digital work.",
+    "Open to collaborations and new projects — get in touch with Khat Vanna for design and development work.",
 };
 
 export default function ContactPage() {

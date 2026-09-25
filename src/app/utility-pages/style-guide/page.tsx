@@ -4,9 +4,9 @@ import SiteNav from "@/components/SiteNav";
 import StyleGuideSections from "@/components/StyleGuideSections";
 
 export const metadata: Metadata = {
-  title: "Style Guide — Conax® Studio",
+  title: "Style Guide — Khat Vanna",
   description:
-    "Conax design system — neutral colors, Inter Tight typography scale, and button styles.",
+    "Portfolio design system — neutral colors, typography scale, and button styles.",
 };
 
 export default function StyleGuidePage() {

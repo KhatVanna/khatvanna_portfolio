@@ -4,9 +4,9 @@ import PrivacyPolicySections from "@/components/PrivacyPolicySections";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Conax® Studio",
+  title: "Privacy Policy — Khat Vanna",
   description:
-    "How Conax collects, uses, and safeguards your information when you visit our website or use our design services.",
+    "How Khat Vanna collects, uses, and safeguards your information when you visit this portfolio site or get in touch.",
 };
 
 export default function PrivacyPolicyPage() {

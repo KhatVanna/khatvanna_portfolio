@@ -1,5 +1,5 @@
 const INTRO =
-  'Welcome to Conax ("we," "our," or "us"). We are committed to protecting your privacy and ensuring a secure experience for our clients. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or use our design services.';
+  'Welcome to the portfolio site of Khat Vanna ("I," "me," or "my"). I am committed to protecting your privacy when you visit this website or get in touch about design and development work. This Privacy Policy explains how I collect, use, and safeguard your information.';
 
 type PolicySection = {
   index: string;
@@ -22,7 +22,7 @@ const SECTIONS: PolicySection[] = [
     subsections: [
       {
         title: "1. Personal Information",
-        intro: "We may collect the following information when you contact us or use our services:",
+        intro: "I may collect the following information when you contact me or inquire about services:",
         bullets: [
           "Name",
           "Email address",
@@ -33,7 +33,7 @@ const SECTIONS: PolicySection[] = [
       },
       {
         title: "2. Usage data",
-        intro: "We may collect the following information bout how you interact with our website:",
+        intro: "I may collect the following information about how you interact with this website:",
         bullets: [
           "IP Address",
           "Browser type",
@@ -43,50 +43,50 @@ const SECTIONS: PolicySection[] = [
       },
       {
         title: "3. Cookies & Tracking",
-        body: "We may use cookies and similar technologies to enhance your browsing experience.",
+        body: "This site may use cookies and similar technologies to enhance your browsing experience.",
       },
     ],
   },
   {
     index: "02",
     title: "How We Use Your Information",
-    intro: "We use the information collected to:",
+    intro: "I use the information collected to:",
     bullets: [
-      "Provide and improve our services.",
-      "Respond to inquiries and communicate with clients.",
-      "Send updates, promotions, or marketing communications (only if you opt in).",
-      "Ensure security and prevent fraud.",
+      "Respond to inquiries and communicate about potential projects.",
+      "Provide and improve my design and development services.",
+      "Send updates or notes (only if you opt in).",
+      "Ensure security and prevent abuse of this site.",
     ],
   },
   {
     index: "03",
     title: "Sharing of Information",
-    body: "We do not sell, rent, or trade your personal information. We may share data with trusted third-party service providers (e.g., payment processors, analytics tools) strictly for operational purposes.",
+    body: "I do not sell, rent, or trade your personal information. I may share data with trusted third-party service providers (e.g., analytics or hosting tools) strictly for operational purposes.",
   },
   {
     index: "04",
     title: "Data Security",
-    body: "We take appropriate technical and organizational measures to protect your personal information from unauthorized access, use, or disclosure.",
+    body: "I take appropriate technical and organizational measures to protect your personal information from unauthorized access, use, or disclosure.",
   },
   {
     index: "05",
     title: "Your Rights",
-    body: "Depending on your location, you may have the right to: Access, update, or delete your personal data. Opt out of marketing communications. Request a copy of the data we hold about you. To exercise these rights, contact us at privacy@rizencreative.com.",
+    body: "Depending on your location, you may have the right to access, update, or delete your personal data, opt out of marketing communications, or request a copy of the data I hold about you. To exercise these rights, contact me at hello@khatvanna.com.",
   },
   {
     index: "06",
     title: "Third-Party Links",
-    body: "Our website may contain links to third-party sites. We are not responsible for the privacy practices or content of those websites.",
+    body: "This website may contain links to third-party sites. I am not responsible for the privacy practices or content of those websites.",
   },
   {
     index: "07",
     title: "Changes to This Policy",
-    body: 'We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised "Effective Date."',
+    body: 'I may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised "Effective Date."',
   },
   {
     index: "08",
     title: "Contact Us",
-    body: "If you have any questions about this Privacy Policy, please contact us: hello@conaxagency.com",
+    body: "If you have any questions about this Privacy Policy, please contact me: hello@khatvanna.com",
   },
 ];
 

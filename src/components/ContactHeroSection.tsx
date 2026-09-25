@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { SITE } from "@/data/site";
 
 const SOCIALS = [
   { label: "Twitter", href: "https://twitter.com" },
@@ -69,10 +70,10 @@ export default function ContactHeroSection() {
               Email at
             </p>
             <Link
-              href="mailto:hello@conaxagency.com"
+              href={`mailto:${SITE.email}`}
               className="mt-2 inline-block text-[clamp(1.15rem,2.2vw,1.65rem)] font-semibold tracking-[-0.02em] transition-opacity hover:opacity-60"
             >
-              hello@conaxagency.com
+              {SITE.email}
             </Link>
           </div>
         </div>

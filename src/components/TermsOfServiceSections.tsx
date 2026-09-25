@@ -1,5 +1,5 @@
 const INTRO =
-  'This Terms of Service agreement ("Agreement") is entered into between Gorex ("Agency," "we," "us," or "our") and the individual or entity engaging our services ("Client," "you," or "your"). By subscribing to a plan or initiating a project, you agree to the following terms.';
+  'These Terms of Service ("Terms") govern your use of the portfolio website of Khat Vanna ("I," "me," or "my") and any design or development services I agree to in writing. By using this site or engaging me for work, you agree to the following terms.';
 
 type TermsSection = {
   index: string;
@@ -13,36 +13,37 @@ const SECTIONS: TermsSection[] = [
   {
     index: "01",
     title: "Acceptance of Terms",
-    body: "By using our website or engaging with our services, you agree to be bound by these Terms of Service, our Privacy Policy, and any other guidelines or additional terms provided.",
+    body: "By using this website or engaging with my services, you agree to be bound by these Terms of Service, my Privacy Policy, and any project-specific agreements.",
   },
   {
     index: "02",
     title: "Services Provided",
-    body: "RIZEN offers creative and digital services including (but not limited to) web design & development, branding, digital marketing, and production. Specific service agreements will be outlined in project contracts.",
+    body: "I offer creative and digital services including (but not limited to) web design and development, branding, UI/UX design, and related consulting. Scope, deliverables, and fees are defined in project proposals or contracts.",
   },
   {
     index: "03",
     title: "Use of Website",
     bullets: [
-      "You agree to use our website only for lawful purposes.",
-      "You may not attempt to hack, disrupt, or misuse any features of our website.",
-      "Unauthorized use of our website may result in termination of access.",
+      "You agree to use this website only for lawful purposes.",
+      "You may not attempt to hack, disrupt, or misuse any features of this site.",
+      "Unauthorized use of this website may result in termination of access.",
     ],
   },
   {
     index: "04",
     title: "Intellectual Property",
     bullets: [
-      "All content on this website, including text, graphics, logos, designs, and media, is owned by Gorex Agency or licensed for use.",
-      "You may not copy, reproduce, or distribute our content without prior written consent.",
+      "Unless otherwise agreed in writing, portfolio content on this site — including text, graphics, logos, and media — is owned by Khat Vanna or used with permission.",
+      "You may not copy, reproduce, or distribute site content without prior written consent.",
+      "Client project ownership and licensing terms are specified in individual project agreements.",
     ],
   },
   {
     index: "05",
     title: "Payment & Billing",
     bullets: [
-      "Fees and payment terms will be outlined in project contracts. Late payments may be subject to interest charges or suspension of services.",
-      "All fees are non-refundable unless otherwise agreed in writing.",
+      "Fees and payment terms are outlined in project proposals or contracts. Late payments may pause work until accounts are current.",
+      "Deposits and fees are non-refundable unless otherwise agreed in writing.",
     ],
   },
   {
@@ -51,37 +52,37 @@ const SECTIONS: TermsSection[] = [
     intro: "Clients agree to:",
     bullets: [
       "Provide accurate and timely information necessary for projects.",
-      "Approve deliverables within agreed timelines.",
-      "Respect intellectual property rights of RIZEN Agency.",
+      "Review and approve deliverables within agreed timelines.",
+      "Respect intellectual property rights of Khat Vanna and third parties.",
     ],
   },
   {
     index: "07",
     title: "Limitation of Liability",
     bullets: [
-      "We strive to provide the highest quality services but cannot guarantee uninterrupted website functionality or specific business outcomes.",
-      "Gorex Agency is not liable for any indirect, incidental, or consequential damages arising from use of our website or services.",
+      "I strive to deliver high-quality work but cannot guarantee uninterrupted website functionality or specific business outcomes.",
+      "Khat Vanna is not liable for indirect, incidental, or consequential damages arising from use of this website or services, to the extent permitted by law.",
     ],
   },
   {
     index: "08",
     title: "Termination",
-    body: "We may suspend or terminate services if these Terms are violated or if payment obligations are not met.",
+    body: "Either party may terminate a project according to the terms in the relevant agreement. I may suspend access to this site if these Terms are violated.",
   },
   {
     index: "09",
     title: "Governing Law",
-    body: "These Terms shall be governed by and interpreted under the laws of USA. Any disputes will be resolved in the courts of NY & CA.",
+    body: "These Terms are governed by the laws applicable in the Kingdom of Cambodia, without regard to conflict-of-law principles.",
   },
   {
     index: "10",
     title: "Changes to Terms",
-    body: 'We reserve the right to update or modify these Terms of Service at any time. Updated versions will be posted with a revised "Effective Date."',
+    body: 'I may update or modify these Terms of Service at any time. Updated versions will be posted with a revised "Effective Date."',
   },
   {
     index: "11",
-    title: "Contact Us",
-    body: "If you have any questions about this Privacy Policy, please contact us: hello@conaxagency.com",
+    title: "Contact",
+    body: "If you have any questions about these Terms, please contact me: hello@khatvanna.com",
   },
 ];
 
