@@ -199,7 +199,7 @@ export default function WorksSection() {
         <div className="mt-16 grid grid-cols-1 gap-8 border-t border-black/10 pt-14 md:mt-24 md:grid-cols-2 md:gap-12 md:pt-16 lg:mt-28">
           <div>
             <h3 className="max-w-[10ch] text-[clamp(2rem,4vw,3.25rem)] font-semibold leading-[1.05] tracking-[-0.035em] uppercase">
-              Selected Work
+              Projects
             </h3>
             <div className="mt-6 flex items-center">
               {AVATARS.map((src, i) => (
