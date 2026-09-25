@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scraped HTML / temp inspect artifacts
+scripts/_*.html
+scripts/*.html
+scripts/*-snip.txt
+
