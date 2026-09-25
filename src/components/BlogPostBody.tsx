@@ -80,7 +80,7 @@ export default function BlogPostBody({ post }: { post: BlogPost }) {
 
           <div className="space-y-12 md:space-y-16">
             {BLOG_ARTICLE.sections.map((section, i) => {
-              if ("quote" in section && section.quote) {
+              if ("quote" in section) {
                 return (
                   <blockquote
                     key={`quote-${i}`}
@@ -97,13 +97,11 @@ export default function BlogPostBody({ post }: { post: BlogPost }) {
               }
 
               return (
-                <div key={section.heading ?? i}>
-                  {section.heading && (
-                    <h2 className="text-[clamp(1.5rem,3vw,2.25rem)] font-semibold leading-tight tracking-[-0.03em]">
-                      {section.heading}
-                    </h2>
-                  )}
-                  {section.paragraphs?.map((p) => (
+                <div key={section.heading}>
+                  <h2 className="text-[clamp(1.5rem,3vw,2.25rem)] font-semibold leading-tight tracking-[-0.03em]">
+                    {section.heading}
+                  </h2>
+                  {section.paragraphs.map((p) => (
                     <p
                       key={p.slice(0, 40)}
                       className="mt-5 text-[clamp(1rem,1.3vw,1.125rem)] leading-relaxed text-neutral-500"
