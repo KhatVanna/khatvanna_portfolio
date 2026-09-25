@@ -28,7 +28,7 @@ export default function ServicesHeroSection() {
         {/* Giant SERVICES + overlapping image */}
         <div className="relative flex flex-1 items-center py-10 md:py-16">
           <h1 className="w-full text-[clamp(3.5rem,16vw,13rem)] font-semibold leading-[0.85] tracking-[-0.05em] text-black/8 uppercase">
-            Services
+            Skills
           </h1>
 
           <div className="absolute top-1/2 right-0 z-[1] w-[min(48vw,420px)] -translate-y-[42%] sm:w-[min(42vw,460px)] md:right-[4%] md:w-[min(36vw,480px)] lg:right-[8%]">

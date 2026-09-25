@@ -11,7 +11,7 @@ import StudioSection from "@/components/StudioSection";
 import WhatSetsUsApartSection from "@/components/WhatSetsUsApartSection";
 
 export const metadata: Metadata = {
-  title: "About Us — Khat Vanna",
+  title: "About — Khat Vanna",
   description:
     "About Khat Vanna — designer and developer portfolio. Selected work and capabilities.",
 };

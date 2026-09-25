@@ -15,21 +15,21 @@ const LEFT: Project[] = [
     date: "Sept 2025",
     image: "/images/work-page/zenith.webp",
     aspect: "portrait",
-    href: "/works/zenith-brand-refresh",
+    href: "/projects/zenith-brand-refresh",
   },
   {
     title: "Aura Fintech App",
     date: "June 2025",
     image: "/images/work-page/aura.webp",
     aspect: "portrait",
-    href: "/works/aura-fintech-app",
+    href: "/projects/aura-fintech-app",
   },
   {
     title: "Luma Health",
     date: "May 2025",
     image: "/images/work-page/luma.webp",
     aspect: "portrait",
-    href: "/works/luma-health",
+    href: "/projects/luma-health",
   },
 ];
 
@@ -39,21 +39,21 @@ const RIGHT: Project[] = [
     date: "Feb 2025",
     image: "/images/work-page/veloce.webp",
     aspect: "landscape",
-    href: "/works/veloce-e-commerce",
+    href: "/projects/veloce-e-commerce",
   },
   {
     title: "Stellar SaaS Dashboard",
     date: "Nov 2025",
     image: "/images/work-page/stellar.webp",
     aspect: "landscape",
-    href: "/works/stellar-saas-dashboard",
+    href: "/projects/stellar-saas-dashboard",
   },
   {
     title: "Northland Studio Website",
     date: "July 2025",
     image: "/images/work-page/northland.webp",
     aspect: "landscape",
-    href: "/works/northland-studio-website",
+    href: "/projects/northland-studio-website",
   },
 ];
 

@@ -5,7 +5,7 @@ const SERVICES = [
   {
     index: "01",
     title: "UI/UX Design",
-    href: "/services/ui-ux-design",
+    href: "/skills/ui-ux-design",
     body: "We craft immersive digital interfaces that prioritize user clarity and seamless navigation across every touchpoint.",
     categories: ["User Research", "Wireframing", "Prototyping"],
     image: "/images/services-page/svc-01.webp",
@@ -13,7 +13,7 @@ const SERVICES = [
   {
     index: "02",
     title: "Brand Identity",
-    href: "/services/brand-identity",
+    href: "/skills/brand-identity",
     body: "We build comprehensive visual systems that capture the core essence and unique personality of your business.",
     categories: ["Packaging Design", "Logo Design", "Rebranding"],
     image: "/images/services-page/svc-02.webp",
@@ -21,7 +21,7 @@ const SERVICES = [
   {
     index: "03",
     title: "Web Development",
-    href: "/services/web-development",
+    href: "/skills/web-development",
     body: "Our team translates high-end designs into high-performance digital products using clean, scalable code.",
     categories: ["React/Next.js", "CMS Integration", "E-Commerce"],
     image: "/images/services-page/svc-03.webp",
@@ -29,7 +29,7 @@ const SERVICES = [
   {
     index: "04",
     title: "Digital Strategy",
-    href: "/services/digital-strategy",
+    href: "/skills/digital-strategy",
     body: "We provide the data-driven roadmap necessary to navigate the competitive landscape.",
     categories: ["Market Analysis", "SEO Audit", "Growth Hacking"],
     image: "/images/services-page/svc-04.webp",

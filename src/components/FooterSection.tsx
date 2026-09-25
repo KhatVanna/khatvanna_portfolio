@@ -6,9 +6,9 @@ import { SITE } from "@/data/site";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about-us" },
-  { label: "Skills", href: "/services" },
-  { label: "Projects", href: "/work" },
+  { label: "About", href: "/about" },
+  { label: "Skills", href: "/skills" },
+  { label: "Projects", href: "/projects" },
   { label: "Contact", href: "/contact" },
 ];
 

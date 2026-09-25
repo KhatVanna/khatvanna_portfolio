@@ -86,13 +86,13 @@ const SHARED_RELATED: CaseRelated[] = [
     title: "Zenith Brand Refresh",
     date: "Sept 2025",
     image: "/images/zenith/related-zenith.webp",
-    href: "/works/zenith-brand-refresh",
+    href: "/projects/zenith-brand-refresh",
   },
   {
     title: "Veloce E-Commerce",
     date: "Feb 2025",
     image: "/images/veloce/related-veloce.webp",
-    href: "/works/veloce-e-commerce",
+    href: "/projects/veloce-e-commerce",
   },
 ];
 

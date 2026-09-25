@@ -7,9 +7,9 @@ import { SITE } from "@/data/site";
 
 const NAV_LINKS = [
   { label: "Home", href: "/", number: "01" },
-  { label: "About", href: "/about-us", number: "02" },
-  { label: "Skills", href: "/services", number: "03" },
-  { label: "Projects", href: "/work", number: "04" },
+  { label: "About", href: "/about", number: "02" },
+  { label: "Skills", href: "/skills", number: "03" },
+  { label: "Projects", href: "/projects", number: "04" },
   { label: "Contact", href: "/contact", number: "05" },
 ];
 
@@ -222,8 +222,8 @@ export default function SiteNav() {
   const pathname = usePathname();
   const isLightPage =
     pathname?.startsWith("/about") ||
-    pathname?.startsWith("/services") ||
-    pathname === "/work" ||
+    pathname?.startsWith("/skills") ||
+    pathname?.startsWith("/projects") ||
     pathname === "/blog" ||
     pathname?.startsWith("/blog/") ||
     pathname === "/404" ||
@@ -253,8 +253,8 @@ export default function SiteNav() {
       if (
         !onLight &&
         (pathname?.startsWith("/about") ||
-          pathname?.startsWith("/services") ||
-          pathname === "/work" ||
+          pathname?.startsWith("/skills") ||
+          pathname?.startsWith("/projects") ||
           pathname === "/blog" ||
           pathname?.startsWith("/blog/") ||
           pathname === "/404" ||

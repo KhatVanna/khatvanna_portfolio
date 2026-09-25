@@ -27,7 +27,7 @@ export default function WorkHeroSection() {
       <div className="relative z-10 mx-auto flex w-full max-w-[1600px] flex-1 flex-col px-5 pt-28 pb-10 md:px-8 md:pt-32 md:pb-12 lg:px-10 lg:pt-36">
         <div className="relative flex flex-1 items-center py-10 md:py-16">
           <h1 className="w-full text-[clamp(3.5rem,16vw,13rem)] font-semibold leading-[0.85] tracking-[-0.05em] text-black/8 uppercase">
-            Work
+            Projects
             <span className="align-super text-[0.35em] tracking-normal">*</span>
           </h1>
 

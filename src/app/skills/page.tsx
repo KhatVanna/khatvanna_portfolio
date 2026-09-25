@@ -6,7 +6,7 @@ import ServicesListSection from "@/components/ServicesListSection";
 import SiteNav from "@/components/SiteNav";
 
 export const metadata: Metadata = {
-  title: "Services — Khat Vanna",
+  title: "Skills — Khat Vanna",
   description:
     "We specialize in the development of corporate websites, online services and online stores.",
 };

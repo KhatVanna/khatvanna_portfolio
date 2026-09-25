@@ -13,28 +13,28 @@ const PROJECTS = [
     date: "Sept 2025",
     image: "/images/works/work-0.webp",
     aspect: "portrait" as const,
-    href: "/works/zenith-brand-refresh",
+    href: "/projects/zenith-brand-refresh",
   },
   {
     title: "Veloce E-Commerce",
     date: "Feb 2025",
     image: "/images/works/work-1.webp",
     aspect: "landscape" as const,
-    href: "/works/veloce-e-commerce",
+    href: "/projects/veloce-e-commerce",
   },
   {
     title: "Aura Fintech App",
     date: "June 2025",
     image: "/images/approach-phone.webp",
     aspect: "portrait" as const,
-    href: "/works/aura-fintech-app",
+    href: "/projects/aura-fintech-app",
   },
   {
     title: "Stellar SaaS Dashboard",
     date: "Nov 2025",
     image: "/images/works/work-3.webp",
     aspect: "landscape" as const,
-    href: "/works/stellar-saas-dashboard",
+    href: "/projects/stellar-saas-dashboard",
   },
 ];
 
