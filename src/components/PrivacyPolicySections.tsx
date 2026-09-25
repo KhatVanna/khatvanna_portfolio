@@ -71,7 +71,7 @@ const SECTIONS: PolicySection[] = [
   {
     index: "05",
     title: "Your Rights",
-    body: "Depending on your location, you may have the right to access, update, or delete your personal data, opt out of marketing communications, or request a copy of the data I hold about you. To exercise these rights, contact me at hello@khatvanna.com.",
+    body: "Depending on your location, you may have the right to access, update, or delete your personal data, opt out of marketing communications, or request a copy of the data I hold about you. To exercise these rights, contact me at khatvanna2005@gmail.com.",
   },
   {
     index: "06",
@@ -86,7 +86,7 @@ const SECTIONS: PolicySection[] = [
   {
     index: "08",
     title: "Contact Me",
-    body: "If you have any questions about this Privacy Policy, please contact me: hello@khatvanna.com",
+    body: "If you have any questions about this Privacy Policy, please contact me: khatvanna2005@gmail.com",
   },
 ];
 

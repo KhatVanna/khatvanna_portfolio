@@ -30,31 +30,31 @@ export default function StudioSection() {
               {SITE.name}
             </p>
             <p className="text-[12px] leading-snug text-neutral-700 md:text-[13px]">
-              {SITE.role} portfolio
+              {SITE.roleDetail}
             </p>
             <p className="text-[12px] font-medium tracking-tight md:text-[13px]">
-              Selected work
+              {SITE.teamName}
             </p>
             <div className="hidden md:block" />
           </div>
         </div>
 
-        {/* Photo mosaic */}
+        {/* Photo mosaic — Kalapak crew + workspace */}
         <div className="grid grid-cols-2 gap-3 md:grid-cols-6 md:gap-4 lg:gap-5">
           <div className="relative col-span-1 aspect-3/4 overflow-hidden rounded-2xl bg-neutral-200">
-            <Image src="/images/studio/studio-7.webp" alt="Portrait study" fill sizes="20vw" className="object-cover grayscale" />
+            <Image src="/images/team/kalapak/rom-chamraeun.jpg" alt="Rom Chamraeun" fill sizes="20vw" className="object-cover object-top grayscale" />
           </div>
           <div className="relative col-span-1 aspect-3/4 overflow-hidden rounded-2xl bg-neutral-200">
-            <Image src="/images/studio/studio-1.webp" alt="Team portrait" fill sizes="20vw" className="object-cover grayscale" />
+            <Image src="/images/team/kalapak/phuem-norng.jpg" alt="Phuem Norng" fill sizes="20vw" className="object-cover object-top grayscale" />
           </div>
           <div className="relative col-span-1 aspect-3/4 overflow-hidden rounded-2xl bg-neutral-200">
-            <Image src="/images/studio/studio-8.webp" alt="Studio moment" fill sizes="20vw" className="object-cover grayscale" />
+            <Image src="/images/team/kalapak/pheun-seanghai.jpg" alt="Pheun Seanghai" fill sizes="20vw" className="object-cover object-top grayscale" />
           </div>
           <div className="relative col-span-1 aspect-3/4 overflow-hidden rounded-2xl bg-neutral-200">
             <Image src="/images/studio/studio-0.webp" alt="Workspace" fill sizes="20vw" className="object-cover grayscale" />
           </div>
           <div className="relative col-span-2 row-span-2 min-h-[280px] overflow-hidden rounded-2xl bg-neutral-200 md:min-h-[420px]">
-            <Image src={SITE.photo} alt={SITE.photoAlt} fill sizes="40vw" className="object-cover" priority />
+            <Image src={SITE.photo} alt={SITE.photoAlt} fill sizes="40vw" className="object-cover object-top" priority />
           </div>
 
           <div className="relative col-span-2 aspect-video overflow-hidden rounded-2xl bg-neutral-200">
@@ -71,7 +71,7 @@ export default function StudioSection() {
             <Image src="/images/studio/studio-5.webp" alt="Office discussion" fill sizes="50vw" className="object-cover grayscale" />
           </div>
           <div className="relative col-span-2 aspect-video overflow-hidden rounded-2xl bg-neutral-200 md:col-span-3">
-            <Image src="/images/studio/studio-0.webp" alt="Team at desks" fill sizes="50vw" className="object-cover grayscale" />
+            <Image src="/images/team/kalapak/khat-vanna.jpg" alt={SITE.photoAlt} fill sizes="50vw" className="object-cover object-top grayscale" />
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { SITE } from "@/data/site";
 const SOCIALS = [
   { label: "Twitter", href: "https://twitter.com" },
   { label: "Instagram", href: "https://instagram.com" },
-  { label: "Dribbble", href: "https://dribbble.com" },
+  { label: "GitHub", href: "https://github.com/Kalapak-Team" },
 ];
 
 export default function ServicesHeroSection() {

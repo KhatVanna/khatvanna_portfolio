@@ -1,48 +1,6 @@
 import Image from "next/image";
-import { SITE } from "@/data/site";
-
-const FOCUS_AREAS = [
-  { id: "01", label: "Brand & Visual Design" },
-  { id: "02", label: "UI/UX & Product" },
-  { id: "03", label: "Front-End Development" },
-  { id: "04", label: "Design Systems" },
-];
-
-const SKILL_CARDS = [
-  {
-    title: "Design",
-    description:
-      "Identity systems, art direction, and interfaces that feel intentional from first sketch to final pixel.",
-  },
-  {
-    title: "Development",
-    description:
-      "Performant, accessible front-end builds with modern stacks — from marketing sites to product UI.",
-  },
-  {
-    title: "Strategy",
-    description:
-      "Clear positioning, user flows, and content structure so every screen supports a measurable goal.",
-  },
-  {
-    title: "Collaboration",
-    description:
-      "Direct communication with founders and teams — one point of contact from discovery through launch.",
-  },
-];
-
-function SkillCard({ title, description }: { title: string; description: string }) {
-  return (
-    <article className="flex flex-col justify-end rounded-2xl bg-white p-6 md:rounded-[1.25rem] md:p-8">
-      <div className="border-l border-black/40 pl-3">
-        <h4 className="text-sm font-semibold tracking-tight md:text-[15px]">{title}</h4>
-        <p className="mt-3 text-[13px] leading-relaxed text-neutral-600 md:text-[14px]">
-          {description}
-        </p>
-      </div>
-    </article>
-  );
-}
+import { KALAPAK, KALAPAK_TEAM } from "@/data/kalapak";
+import { EDUCATION, EXPERIENCE, SITE } from "@/data/site";
 
 export default function AboutTeamSection() {
   return (
@@ -62,77 +20,116 @@ export default function AboutTeamSection() {
           <div>
             <p className="flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
               <span className="inline-block h-3 w-px bg-black" aria-hidden />
-              Profile
+              Kalapak Crew
             </p>
           </div>
 
           <div className="md:col-span-2">
-            <h2 className="text-[clamp(2.75rem,7vw,5.25rem)] font-semibold leading-[0.95] tracking-[-0.04em]">
-              {SITE.name}
+            <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[0.95] tracking-[-0.04em]">
+              Meet the people
               <br />
-              CV
+              behind the code
             </h2>
-
-            <div className="mt-6 flex items-center">
-              <div className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-[#f4f4f4] bg-neutral-200">
-                <Image src={SITE.photo} alt="" fill sizes="40px" className="object-cover" />
-              </div>
-            </div>
-            <p className="mt-3 text-[11px] tracking-[0.14em] text-neutral-500 uppercase">
-              {SITE.role}
+            <p className="mt-5 max-w-[48ch] text-[14px] leading-relaxed text-neutral-600">
+              {KALAPAK.blurb}
             </p>
           </div>
 
-          <div className="flex flex-col gap-8 md:items-end md:text-right">
-            <p className="max-w-[28ch] text-[13px] leading-relaxed text-neutral-600 md:text-[14px]">
-              Designer and developer based in {SITE.location}, focused on brand, product, and web
-              experiences that balance craft with clarity.
-            </p>
-            <ul className="space-y-2">
-              {FOCUS_AREAS.map((d) => (
-                <li
-                  key={d.id}
-                  className="text-[12px] font-medium tracking-[0.12em] uppercase text-neutral-700"
-                >
-                  /{d.id} {d.label}
-                </li>
-              ))}
-            </ul>
+          <div className="flex flex-col gap-4 md:items-end md:text-right">
+            <a
+              href={KALAPAK.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[13px] font-medium underline-offset-4 hover:underline"
+            >
+              {KALAPAK.url.replace("https://", "")} ↗
+            </a>
+            <a
+              href={KALAPAK.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[13px] font-medium underline-offset-4 hover:underline"
+            >
+              github.com/Kalapak-Team ↗
+            </a>
           </div>
         </div>
 
-        <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-2 md:mt-20 md:grid-cols-4 md:gap-5 lg:mt-24">
-          <div className="flex flex-col justify-end pb-2 sm:col-span-2 md:col-span-1 md:pb-4">
-            <h3 className="max-w-[12ch] text-[clamp(1.35rem,2.2vw,1.75rem)] font-semibold leading-[1.1] tracking-[-0.02em] uppercase">
-              Focus & Skills
-            </h3>
-            <p className="mt-4 max-w-[28ch] text-[13px] leading-relaxed text-neutral-600">
-              A single lead for design and build — from concept through shipped, maintainable code.
-            </p>
-          </div>
-
-          <article className="relative aspect-3/4 overflow-hidden rounded-2xl bg-white md:rounded-[1.25rem] sm:col-span-2 md:col-span-1">
-            <Image
-              src={SITE.photo}
-              alt={SITE.photoAlt}
-              fill
-              sizes="(max-width: 768px) 100vw, 25vw"
-              className="object-cover object-top"
-            />
-            <div className="absolute inset-x-0 bottom-0 bg-linear-to-t from-white via-white/95 to-transparent px-4 pt-16 pb-4 md:px-5 md:pb-5">
-              <div className="border-l border-black/40 pl-3">
-                <h4 className="text-sm font-semibold tracking-tight md:text-[15px]">{SITE.name}</h4>
-                <p className="mt-0.5 text-[12px] text-neutral-500 md:text-[13px]">{SITE.role}</p>
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 md:gap-5">
+          {KALAPAK_TEAM.map((member) => (
+            <article
+              key={member.name}
+              className="relative aspect-3/4 overflow-hidden rounded-2xl bg-white md:rounded-[1.25rem]"
+            >
+              <Image
+                src={member.image}
+                alt={member.name}
+                fill
+                sizes="(max-width: 768px) 100vw, 25vw"
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/95 to-transparent px-4 pt-16 pb-4 md:px-5 md:pb-5">
+                <div className="border-l pl-3" style={{ borderColor: member.accent }}>
+                  <h3 className="text-sm font-semibold tracking-tight md:text-[15px]">
+                    {member.name}
+                  </h3>
+                  <p className="mt-0.5 text-[12px] text-neutral-500 md:text-[13px]">
+                    {member.role}
+                  </p>
+                  <p className="text-[11px] text-neutral-400">{member.title}</p>
+                </div>
               </div>
-            </div>
-          </article>
+            </article>
+          ))}
+        </div>
 
-          {SKILL_CARDS.slice(0, 2).map((card) => (
-            <SkillCard key={card.title} {...card} />
-          ))}
-          {SKILL_CARDS.slice(2).map((card) => (
-            <SkillCard key={card.title} {...card} />
-          ))}
+        {/* Experience */}
+        <div className="mt-20 border-t border-black/10 pt-14 md:mt-24 md:pt-16">
+          <p className="mb-8 flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
+            <span className="inline-block h-3 w-px bg-black" aria-hidden />
+            Experience — {SITE.name}
+          </p>
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+            {EXPERIENCE.map((item) => (
+              <article key={item.org} className="rounded-2xl bg-white p-6 md:p-8">
+                <p className="text-[11px] tracking-[0.14em] text-neutral-400 uppercase">
+                  {item.period}
+                </p>
+                <h3 className="mt-3 text-lg font-semibold tracking-tight">{item.org}</h3>
+                <p className="mt-1 text-sm text-neutral-500">{item.role}</p>
+                <ul className="mt-4 space-y-2">
+                  {item.points.map((point) => (
+                    <li
+                      key={point}
+                      className="text-[13px] leading-relaxed text-neutral-600 before:mr-2 before:content-['–']"
+                    >
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        {/* Education */}
+        <div className="mt-16 border-t border-black/10 pt-14 md:mt-20 md:pt-16">
+          <p className="mb-8 flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
+            <span className="inline-block h-3 w-px bg-black" aria-hidden />
+            Education
+          </p>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {EDUCATION.map((item, i) => (
+              <article key={item.school} className="rounded-2xl bg-white p-5 md:p-6">
+                <span className="text-[11px] tracking-[0.14em] text-neutral-400 uppercase">
+                  /0{i + 1}
+                </span>
+                <h3 className="mt-4 text-[15px] font-semibold tracking-tight">{item.school}</h3>
+                <p className="mt-1 text-[13px] text-neutral-500">{item.detail}</p>
+                <p className="mt-3 text-[12px] text-neutral-400">{item.period}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

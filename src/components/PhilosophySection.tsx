@@ -1,23 +1,24 @@
 import Image from "next/image";
 
 const AVATARS = [
-  "/images/avatar-1.webp",
-  "/images/avatar-2.webp",
-  "/images/avatar-3.webp",
+  "/images/team/kalapak/khat-vanna.jpg",
+  "/images/team/kalapak/rom-chamraeun.jpg",
+  "/images/team/kalapak/phuem-norng.jpg",
+  "/images/team/kalapak/pheun-seanghai.jpg",
 ];
 
 const STATS = [
   {
-    value: "$5M+",
+    value: "4+",
     index: "/01",
-    title: "In Quantifiable Revenue Growth",
-    body: "Through rigorous UX auditing, my digital interventions have directly generated over $50M in value for partners.",
+    title: "Kalapak Team Members",
+    body: "A student-driven engineering collective shipping real-world software together.",
   },
   {
-    value: "98%",
+    value: "2024",
     index: "/02",
-    title: "Long-Term Partnership Rate",
-    body: "I maintain a near-perfect retention rate, evolving brands long after the initial launch.",
+    title: "Founded Kalapak Code Team",
+    body: "Leading full-stack, mobile, and collaborative projects from Phnom Penh.",
   },
 ];
 
@@ -45,12 +46,12 @@ export default function PhilosophySection() {
           </div>
 
           <div className="md:col-span-2 md:col-start-3">
-            <h2 className="max-w-[16ch] text-[clamp(1.75rem,3.5vw,2.85rem)] font-semibold leading-[1.12] tracking-[-0.03em]">
-              I help ambitious teams build brands, interfaces & website.
+            <h2 className="max-w-[18ch] text-[clamp(1.75rem,3.5vw,2.85rem)] font-semibold leading-[1.12] tracking-[-0.03em]">
+              Research. Develop. Inspire. Help.
             </h2>
             <p className="mt-5 max-w-[42ch] text-[14px] leading-relaxed text-white/55 md:mt-6 md:text-[15px]">
-              I bridge the gap between technology and intuitive human experience through
-              high-end design and strategic engineering.
+              As Founder of Kalapak Code Team, I turn ideas into full-stack products and lead
+              student developers who build with purpose from Cambodia.
             </p>
           </div>
         </div>
@@ -59,14 +60,14 @@ export default function PhilosophySection() {
         <div className="mt-16 grid grid-cols-1 items-start gap-12 md:mt-20 md:grid-cols-4 md:gap-6 lg:mt-24 lg:gap-8">
           <div className="md:col-span-1">
             <h3 className="text-[clamp(1.35rem,2.4vw,1.85rem)] font-semibold leading-[1.15] tracking-[-0.02em] uppercase">
-              <span className="text-white/40">Over </span>
-              <span className="text-white">10+ Years</span>
+              <span className="text-white/40">Building since </span>
+              <span className="text-white">2024</span>
               <br />
-              <span className="text-white/40">In Industry</span>
+              <span className="text-white/40">From Cambodia</span>
             </h3>
 
             <p className="mt-8 text-[11px] tracking-[0.14em] text-white/45 uppercase">
-              Over 23K+ Clients
+              Kalapak Code Team
             </p>
             <div className="mt-4 flex items-center">
               {AVATARS.map((src, i) => (
@@ -75,14 +76,14 @@ export default function PhilosophySection() {
                   className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-black bg-neutral-300"
                   style={{ marginLeft: i === 0 ? 0 : -10, zIndex: AVATARS.length - i }}
                 >
-                  <Image src={src} alt="" fill sizes="40px" className="object-cover" />
+                  <Image src={src} alt="" fill sizes="40px" className="object-cover object-top" />
                 </div>
               ))}
               <div
                 className="relative z-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-black bg-white text-[10px] font-semibold text-black"
                 style={{ marginLeft: -10 }}
               >
-                23K
+                4+
               </div>
             </div>
           </div>
@@ -113,16 +114,16 @@ export default function PhilosophySection() {
             <div className="relative flex min-h-[180px] flex-col justify-between gap-10 rounded-2xl bg-[#ececec] px-5 py-6 text-black sm:col-span-2 md:min-h-[200px] md:px-8 md:py-8">
               <span className="absolute top-5 right-5 text-sm text-neutral-400">/03</span>
               <p className="text-[clamp(2.75rem,5vw,4rem)] font-semibold tracking-[-0.04em]">
-                150+
+                CS
               </p>
               <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between md:gap-10">
                 <p className="text-sm font-semibold tracking-tight md:text-[15px]">
-                  Digital Products
-                  <br className="hidden md:block" /> Launched
+                  Norton University
+                  <br className="hidden md:block" /> Computer Science
                 </p>
                 <p className="max-w-[42ch] text-[13px] leading-relaxed text-neutral-600 md:text-right md:text-[14px]">
-                  My work spans a global landscape, delivering high-impact solutions to
-                  clients in over 20 countries.
+                  Studying CS while leading Kalapak — shipping web, mobile, and AI-minded
+                  projects with a student engineering collective.
                 </p>
               </div>
             </div>

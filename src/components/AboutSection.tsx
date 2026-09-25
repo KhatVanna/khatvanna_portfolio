@@ -35,20 +35,25 @@ export default function AboutSection() {
             />
           </div>
 
-          <p className="mt-5 max-w-[34ch] text-[13px] leading-relaxed text-white/85 md:mt-6 md:text-sm">
-            I bridge technology and intuitive human experience through high-end design
-            and strategic engineering.
+          <p className="mt-5 max-w-[36ch] text-[13px] leading-relaxed text-white/85 md:mt-6 md:text-sm">
+            Computer Science @ {SITE.university}. Founder of{" "}
+            <a
+              href={SITE.teamUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline underline-offset-2 hover:opacity-80"
+            >
+              {SITE.teamName}
+            </a>
+            .
           </p>
         </div>
 
         <div className="relative flex flex-col justify-between md:col-span-7 lg:col-span-6 lg:col-start-6">
-          <h2 className="max-w-[18ch] text-[clamp(1.85rem,4.2vw,3.65rem)] font-semibold leading-[1.12] tracking-[-0.035em]">
-            <span className="text-white">
-              I help ambitious teams build brands, interfaces, and websites that earn
-              attention. From identity to launch, every detail is crafted{" "}
-            </span>
+          <h2 className="max-w-[22ch] text-[clamp(1.85rem,4.2vw,3.65rem)] font-semibold leading-[1.12] tracking-[-0.035em]">
+            <span className="text-white">{SITE.bio} </span>
             <span className="text-white/25">
-              to make your product look confident and perform better.
+              From Phnom Penh to the digital cosmos — I code, I create, I inspire.
             </span>
           </h2>
 

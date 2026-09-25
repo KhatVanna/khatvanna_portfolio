@@ -33,7 +33,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex min-h-screen flex-col pt-[7.5rem]">
         <div className="relative flex flex-1 flex-col px-5 pb-8 pt-6 md:px-8 md:pb-10 lg:px-10">
           <p className="relative z-[2] text-[11px] font-medium tracking-[0.2em] text-white/70 uppercase">
-            Portfolio &amp; CV
+            {SITE.teamName} · Since {SITE.since}
           </p>
 
           <div className="relative z-[2] mt-[4vh] max-w-[14ch] sm:mt-[6vh] md:mt-[8vh]">
@@ -41,8 +41,8 @@ export default function HeroSection() {
               <span className="block">Khat</span>
               <span className="block">Vanna</span>
             </h1>
-            <p className="mt-5 max-w-[28ch] text-[clamp(1rem,1.6vw,1.2rem)] leading-relaxed text-white/85">
-              {SITE.role} crafting brands, interfaces, and websites that earn attention.
+            <p className="mt-5 max-w-[32ch] text-[clamp(1rem,1.6vw,1.2rem)] leading-relaxed text-white/85">
+              {SITE.roleDetail}. {SITE.tagline}
             </p>
           </div>
 

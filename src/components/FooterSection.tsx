@@ -13,9 +13,9 @@ const NAV_LINKS = [
 ];
 
 const SOCIALS = [
-  { label: "Twitter", href: "https://twitter.com" },
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "Dribbble", href: "https://dribbble.com" },
+  { label: "GitHub", href: SITE.githubUrl },
+  { label: "Telegram", href: SITE.social.telegram },
+  { label: "Kalapak", href: SITE.teamUrl },
 ];
 
 export default function FooterSection() {

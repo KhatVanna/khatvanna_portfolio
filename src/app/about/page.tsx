@@ -13,7 +13,7 @@ import WhatSetsUsApartSection from "@/components/WhatSetsUsApartSection";
 export const metadata: Metadata = {
   title: "About — Khat Vanna",
   description:
-    "About Khat Vanna — designer and developer portfolio. Selected work and capabilities.",
+    "About Khat Vanna — Founder & Team Leader of Kalapak Code Team, Computer Science student at Norton University, full-stack developer from Phnom Penh.",
 };
 
 export default function AboutUsPage() {

@@ -14,34 +14,34 @@ type Service = {
 const SERVICES: Service[] = [
   {
     id: "01",
-    title: "UI/UX Design",
+    title: "Web Development",
     description:
-      "I craft immersive digital interfaces that prioritize user clarity and seamless navigation across every touchpoint.",
-    categories: ["USER RESEARCH", "WIREFRAMING", "PROTOTYPING"],
+      "Modern full-stack web apps with Laravel, React, PHP, and JavaScript — from concept to deployment.",
+    categories: ["LARAVEL", "REACT", "PHP", "JAVASCRIPT"],
     images: ["/images/services/svc-0.webp", "/images/services/svc-1.webp"],
   },
   {
     id: "02",
-    title: "Brand Identity",
+    title: "Mobile Apps",
     description:
-      "I build comprehensive visual systems that capture the core essence and unique personality of your business.",
-    categories: ["PACKAGING DESIGN", "LOGO DESIGN", "REBRANDING"],
+      "Cross-platform mobile experiences with Flutter, delivering native feel on iOS and Android from one codebase.",
+    categories: ["FLUTTER", "DART", "FIREBASE"],
     images: ["/images/services/svc-2.webp", "/images/services/svc-3.webp"],
   },
   {
     id: "03",
-    title: "Web Development",
+    title: "Backend & Data",
     description:
-      "I translate high-end designs into high-performance digital products using clean, scalable code.",
-    categories: ["REACT/NEXT.JS", "CMS INTEGRATION", "E-COMMERCE"],
+      "APIs, databases, and reliable server-side systems with MySQL, PostgreSQL, and clean architecture.",
+    categories: ["MYSQL", "POSTGRESQL", "API", "PYTHON"],
     images: ["/images/services/svc-4.webp", "/images/services/svc-5.webp"],
   },
   {
     id: "04",
-    title: "Digital Strategy",
+    title: "Team Leadership",
     description:
-      "I provide the data-driven roadmap necessary to navigate the competitive landscape.",
-    categories: ["MARKET ANALYSIS", "SEO AUDIT", "GROWTH HACKING"],
+      "Founder & Team Leader of Kalapak Code Team — planning, mentoring, and shipping software with purpose from Cambodia.",
+    categories: ["LEADERSHIP", "MENTORING", "AGILE"],
     images: ["/images/services/svc-6.webp", "/images/services/svc-7.webp"],
   },
 ];

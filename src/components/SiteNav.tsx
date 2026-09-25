@@ -133,12 +133,12 @@ function MenuOverlay({ open, onClose }: { open: boolean; onClose: () => void }) 
           </div>
 
           <a
-            href="https://dribbble.com"
+            href={SITE.githubUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden items-center gap-1 text-[11px] tracking-wide hover:opacity-70 sm:inline-flex"
           >
-            Dribbble
+            GitHub
             <span aria-hidden className="text-[10px]">
               ↗
             </span>
@@ -327,12 +327,12 @@ export default function SiteNav() {
             </div>
 
             <a
-              href="https://dribbble.com"
+              href={SITE.githubUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden items-center gap-1 text-[11px] tracking-wide hover:opacity-80 sm:inline-flex"
             >
-              Dribbble
+              GitHub
               <span aria-hidden className="text-[10px]">
                 ↗
               </span>

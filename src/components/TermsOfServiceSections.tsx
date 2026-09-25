@@ -82,7 +82,7 @@ const SECTIONS: TermsSection[] = [
   {
     index: "11",
     title: "Contact",
-    body: "If you have any questions about these Terms, please contact me: hello@khatvanna.com",
+    body: "If you have any questions about these Terms, please contact me: khatvanna2005@gmail.com",
   },
 ];
 

@@ -1,28 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { KALAPAK, KALAPAK_TEAM } from "@/data/kalapak";
 import { SITE } from "@/data/site";
-
-const FOCUS = [
-  { id: "01", label: "UI / UX Design" },
-  { id: "02", label: "Web Development" },
-  { id: "03", label: "Brand Identity" },
-  { id: "04", label: "Digital Strategy" },
-];
-
-const HIGHLIGHTS = [
-  {
-    title: "Design Systems",
-    body: "Clear visual language, typography, and components that scale across products.",
-  },
-  {
-    title: "Product Interfaces",
-    body: "User-centered flows and interaction details that feel fast and intentional.",
-  },
-  {
-    title: "Front-End Craft",
-    body: "Performant Next.js and Tailwind builds with motion that supports the story.",
-  },
-];
 
 export default function TeamSection() {
   return (
@@ -42,97 +21,92 @@ export default function TeamSection() {
           <div className="md:col-span-1">
             <p className="flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
               <span className="inline-block h-3 w-px bg-black" aria-hidden />
-              Profile
+              The Team
             </p>
           </div>
 
           <div className="md:col-span-2">
-            <h2 className="text-[clamp(2.75rem,7vw,5.5rem)] font-semibold leading-[0.95] tracking-[-0.04em]">
-              {SITE.name}
+            <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-semibold leading-[0.95] tracking-[-0.04em]">
+              {KALAPAK.name}
             </h2>
-            <p className="mt-4 text-[15px] font-medium tracking-tight text-neutral-600">
-              {SITE.role}
+            <p className="mt-4 max-w-[48ch] text-[14px] leading-relaxed text-neutral-600">
+              {KALAPAK.blurb} Led by {SITE.name} — Founder & Team Leader.
             </p>
-            <p className="mt-3 max-w-[42ch] text-[13px] leading-relaxed text-neutral-600">
-              A focused practice combining design, development, and strategy — built to
-              ship polished digital work with clarity and care.
-            </p>
+            <div className="mt-6 flex items-center">
+              {KALAPAK_TEAM.map((m, i) => (
+                <div
+                  key={m.name}
+                  className="relative h-11 w-11 overflow-hidden rounded-full border-2 border-white bg-neutral-200"
+                  style={{ marginLeft: i === 0 ? 0 : -10, zIndex: KALAPAK_TEAM.length - i }}
+                >
+                  <Image src={m.image} alt={m.name} fill sizes="44px" className="object-cover" />
+                </div>
+              ))}
+              <span className="ml-3 text-[11px] tracking-[0.14em] text-neutral-500 uppercase">
+                {KALAPAK_TEAM.length}+ Members
+              </span>
+            </div>
           </div>
 
-          <div className="flex flex-col justify-between gap-10 md:col-span-1">
-            <p className="max-w-[28ch] text-[13px] leading-relaxed text-neutral-600 md:ml-auto md:text-right">
-              {SITE.locationLine}
+          <div className="flex flex-col justify-between gap-6 md:col-span-1 md:items-end md:text-right">
+            <p className="max-w-[28ch] text-[13px] leading-relaxed text-neutral-600">
+              Since {KALAPAK.since}
               <br />
               <span className="font-medium text-black">{SITE.location}</span>
             </p>
-            <ul className="space-y-2 md:text-right">
-              {FOCUS.map((d) => (
-                <li
-                  key={d.id}
-                  className="text-[12px] font-medium tracking-[0.12em] uppercase text-neutral-700"
-                >
-                  /{d.id} {d.label}
-                </li>
-              ))}
-            </ul>
+            <a
+              href={KALAPAK.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[12px] font-medium tracking-[0.12em] uppercase text-neutral-700 underline-offset-4 hover:underline"
+            >
+              kalapak-team.space ↗
+            </a>
           </div>
         </div>
 
-        <div className="mt-14 grid grid-cols-1 gap-6 lg:grid-cols-[1.1fr_1.9fr] lg:gap-8 md:mt-20">
-          <article className="relative aspect-4/5 overflow-hidden rounded-2xl bg-white md:min-h-[520px] lg:aspect-auto">
-            <Image
-              src={SITE.photo}
-              alt={SITE.photoAlt}
-              fill
-              sizes="(max-width: 1024px) 100vw, 40vw"
-              className="object-cover object-top"
-              priority={false}
-            />
-            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/95 to-transparent px-5 pt-20 pb-5">
-              <div className="border-l-2 border-black pl-3">
-                <h3 className="text-lg font-semibold tracking-tight">{SITE.name}</h3>
-                <p className="mt-0.5 text-sm text-neutral-500">{SITE.role}</p>
-              </div>
-            </div>
-          </article>
-
-          <div className="flex flex-col justify-between gap-8">
-            <div>
-              <h3 className="max-w-[16ch] text-[clamp(1.5rem,2.4vw,2rem)] font-semibold leading-[1.1] tracking-[-0.02em] uppercase">
-                What I Bring
-              </h3>
-              <p className="mt-4 max-w-[42ch] text-[13px] leading-relaxed text-neutral-600">
-                End-to-end ownership from concept and identity through interface design
-                and production-ready front-end delivery.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-              {HIGHLIGHTS.map((item, i) => (
-                <article
-                  key={item.title}
-                  className="flex flex-col justify-between rounded-2xl bg-white p-5 md:p-6"
-                >
-                  <span className="text-[11px] tracking-[0.14em] text-neutral-400 uppercase">
-                    /0{i + 1}
-                  </span>
-                  <div className="mt-10">
-                    <h4 className="text-[15px] font-semibold tracking-tight">{item.title}</h4>
-                    <p className="mt-2 text-[13px] leading-relaxed text-neutral-600">
-                      {item.body}
-                    </p>
-                  </div>
-                </article>
-              ))}
-            </div>
-
-            <Link
-              href="/contact"
-              className="inline-flex w-full max-w-[280px] items-center justify-center rounded-full bg-black px-5 py-3.5 text-sm font-medium text-white transition-transform hover:scale-[1.02] sm:ml-auto"
+        <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 md:mt-20 md:gap-5">
+          {KALAPAK_TEAM.map((member) => (
+            <article
+              key={member.name}
+              className="relative aspect-4/5 overflow-hidden rounded-2xl bg-white"
             >
-              Get in Touch
-            </Link>
-          </div>
+              <Image
+                src={member.image}
+                alt={member.name}
+                fill
+                sizes="(max-width: 768px) 100vw, 25vw"
+                className="object-cover object-top"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-white via-white/95 to-transparent px-4 pt-16 pb-4">
+                <div
+                  className="border-l-2 pl-3"
+                  style={{ borderColor: member.accent }}
+                >
+                  <h3 className="text-sm font-semibold tracking-tight">{member.name}</h3>
+                  <p className="mt-0.5 text-[12px] text-neutral-500">{member.role}</p>
+                  <p className="text-[11px] text-neutral-400">{member.title}</p>
+                </div>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-10 flex flex-wrap gap-3 md:mt-12">
+          <Link
+            href="/about"
+            className="inline-flex items-center justify-center rounded-full bg-black px-6 py-3.5 text-sm font-medium text-white transition-transform hover:scale-[1.02]"
+          >
+            About our team
+          </Link>
+          <a
+            href={KALAPAK.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center rounded-full border border-black/15 bg-white px-6 py-3.5 text-sm font-medium text-black transition-transform hover:scale-[1.02]"
+          >
+            GitHub ↗
+          </a>
         </div>
       </div>
     </section>
