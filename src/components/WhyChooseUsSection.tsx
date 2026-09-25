@@ -13,19 +13,19 @@ const STATS = [
     value: "150+",
     index: "/01",
     title: "Digital Products Launched",
-    body: "Our portfolio spans a global landscape, delivering high-impact solutions to clients in over 20 countries.",
+    body: "My work spans a global landscape, delivering high-impact solutions to clients in over 20 countries.",
   },
   {
     value: "$5M+",
     index: "/02",
     title: "In Quantifiable Revenue Growth",
-    body: "Through rigorous UX auditing, our digital interventions have directly generated over $50M in value for our partners.",
+    body: "Through rigorous UX auditing, my digital interventions have directly generated over $50M in value for partners.",
   },
   {
     value: "98%",
     index: "/03",
     title: "Long-Term Partnership Rate",
-    body: "We maintain a near-perfect retention rate, evolving brands long after the initial launch.",
+    body: "I maintain a near-perfect retention rate, evolving brands long after the initial launch.",
   },
 ];
 
@@ -179,15 +179,15 @@ export default function WhyChooseUsSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1600px] px-5 py-16 md:px-8 md:py-20 lg:px-10 lg:py-24">
-        {/* Why Choose Us */}
+        {/* Why Work With Me */}
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4 md:gap-6">
           <div className="md:col-span-2">
             <p className="mb-16 flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase md:mb-28">
               <span className="inline-block h-3 w-px bg-black" aria-hidden />
-              Why Choose Us
+              Why Work With Me
             </p>
             <h3 className="max-w-[16ch] text-[clamp(1.35rem,2.4vw,1.85rem)] font-semibold leading-[1.15] tracking-[-0.02em] uppercase">
-              Most Ambitious Brands Partner With Us
+              Ambitious Brands Trust My Craft
             </h3>
           </div>
 
@@ -247,13 +247,13 @@ export default function WhyChooseUsSection() {
 
             <div>
               <p className="max-w-[16ch] text-lg font-semibold leading-snug tracking-tight">
-                Ready to be our next success story?
+                Ready to be my next success story?
               </p>
               <Link
                 href="/contact"
                 className="mt-3 inline-flex items-center gap-2 text-sm font-medium underline-offset-4 hover:underline"
               >
-                Work With Us <span aria-hidden>+</span>
+                Work With Me <span aria-hidden>+</span>
               </Link>
             </div>
           </div>
@@ -264,7 +264,7 @@ export default function WhyChooseUsSection() {
             </p>
             <p className="max-w-[42ch] text-[clamp(1.15rem,2.2vw,1.65rem)] font-medium leading-snug tracking-[-0.02em]">
               <span className="text-black">
-                Our impact resonates across a diverse spectrum of global industries, where we
+                My impact resonates across a diverse spectrum of global industries, where I
                 empower{" "}
               </span>
               <span className="text-black/30">

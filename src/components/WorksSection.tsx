@@ -109,7 +109,7 @@ function Asterisk({ className }: { className?: string }) {
 
 export default function WorksSection() {
   return (
-    <section id="works" className="relative overflow-hidden bg-[#f7f7f7] text-black">
+    <section id="projects" className="relative overflow-hidden bg-[#f7f7f7] text-black">
       {/* Vertical grid */}
       <div
         aria-hidden
@@ -122,10 +122,10 @@ export default function WorksSection() {
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1600px] px-5 py-16 md:px-8 md:py-20 lg:px-10 lg:py-24">
-        {/* Works Showcase intro */}
+        {/* Projects Showcase intro */}
         <div className="mb-6 flex items-start justify-between gap-6 text-[11px] font-medium tracking-[0.14em] uppercase md:mb-8">
           <p className="leading-relaxed">
-            Works
+            Projects
             <br />
             Showcase
           </p>
@@ -195,11 +195,11 @@ export default function WorksSection() {
           <Asterisk className="mx-auto mt-10 block text-3xl text-black/20 md:mt-14 md:text-4xl" />
         </div>
 
-        {/* Our Selected Work */}
+        {/* Selected Work */}
         <div className="mt-16 grid grid-cols-1 gap-8 border-t border-black/10 pt-14 md:mt-24 md:grid-cols-2 md:gap-12 md:pt-16 lg:mt-28">
           <div>
             <h3 className="max-w-[10ch] text-[clamp(2rem,4vw,3.25rem)] font-semibold leading-[1.05] tracking-[-0.035em] uppercase">
-              Our Selected Work
+              Selected Work
             </h3>
             <div className="mt-6 flex items-center">
               {AVATARS.map((src, i) => (
@@ -220,9 +220,9 @@ export default function WorksSection() {
             </div>
           </div>
           <p className="max-w-[48ch] self-end text-[15px] leading-relaxed text-neutral-500 md:text-base">
-            Explore a curated gallery showcase. Each project serves as a testament to our
-            commitment to high-end craftsmanship, transforming complex business challenges into
-            streamlined digital experiences that resonate with a global audience.
+            Explore a curated gallery showcase. Each project is a testament to a commitment to
+            high-end craftsmanship, transforming complex business challenges into streamlined
+            digital experiences that resonate with a global audience.
           </p>
         </div>
 
@@ -307,7 +307,7 @@ export default function WorksSection() {
               established teams who need design and development in one lane.
             </p>
             <p className="max-w-[42ch] text-[15px] leading-relaxed text-neutral-600 md:text-base">
-              Our mission is to serve as a strategic catalyst, leveraging cutting-edge technology
+              My mission is to serve as a strategic catalyst, leveraging cutting-edge technology
               and sophisticated design.
             </p>
           </div>

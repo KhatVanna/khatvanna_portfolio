@@ -11,13 +11,13 @@ const STATS = [
     value: "$5M+",
     index: "/01",
     title: "In Quantifiable Revenue Growth",
-    body: "Through rigorous UX auditing, our digital interventions have directly generated over $50M in value for our partners.",
+    body: "Through rigorous UX auditing, my digital interventions have directly generated over $50M in value for partners.",
   },
   {
     value: "98%",
     index: "/02",
     title: "Long-Term Partnership Rate",
-    body: "We maintain a near-perfect retention rate, evolving brands long after the initial launch.",
+    body: "I maintain a near-perfect retention rate, evolving brands long after the initial launch.",
   },
 ];
 
@@ -40,16 +40,16 @@ export default function PhilosophySection() {
           <div className="md:col-span-1">
             <p className="flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
               <span className="inline-block h-3 w-px bg-white" aria-hidden />
-              Our Philosophy
+              My Philosophy
             </p>
           </div>
 
           <div className="md:col-span-2 md:col-start-3">
             <h2 className="max-w-[16ch] text-[clamp(1.75rem,3.5vw,2.85rem)] font-semibold leading-[1.12] tracking-[-0.03em]">
-              We help ambitious teams build brands, interfaces & website.
+              I help ambitious teams build brands, interfaces & website.
             </h2>
             <p className="mt-5 max-w-[42ch] text-[14px] leading-relaxed text-white/55 md:mt-6 md:text-[15px]">
-              We bridge the gap between technology and intuitive human experience through
+              I bridge the gap between technology and intuitive human experience through
               high-end design and strategic engineering.
             </p>
           </div>
@@ -121,7 +121,7 @@ export default function PhilosophySection() {
                   <br className="hidden md:block" /> Launched
                 </p>
                 <p className="max-w-[42ch] text-[13px] leading-relaxed text-neutral-600 md:text-right md:text-[14px]">
-                  Our portfolio spans a global landscape, delivering high-impact solutions to
+                  My work spans a global landscape, delivering high-impact solutions to
                   clients in over 20 countries.
                 </p>
               </div>

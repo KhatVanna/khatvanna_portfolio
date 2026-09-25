@@ -16,7 +16,7 @@ const SERVICES: Service[] = [
     id: "01",
     title: "UI/UX Design",
     description:
-      "We craft immersive digital interfaces that prioritize user clarity and seamless navigation across every touchpoint.",
+      "I craft immersive digital interfaces that prioritize user clarity and seamless navigation across every touchpoint.",
     categories: ["USER RESEARCH", "WIREFRAMING", "PROTOTYPING"],
     images: ["/images/services/svc-0.webp", "/images/services/svc-1.webp"],
   },
@@ -24,7 +24,7 @@ const SERVICES: Service[] = [
     id: "02",
     title: "Brand Identity",
     description:
-      "We build comprehensive visual systems that capture the core essence and unique personality of your business.",
+      "I build comprehensive visual systems that capture the core essence and unique personality of your business.",
     categories: ["PACKAGING DESIGN", "LOGO DESIGN", "REBRANDING"],
     images: ["/images/services/svc-2.webp", "/images/services/svc-3.webp"],
   },
@@ -32,7 +32,7 @@ const SERVICES: Service[] = [
     id: "03",
     title: "Web Development",
     description:
-      "Our team translates high-end designs into high-performance digital products using clean, scalable code.",
+      "I translate high-end designs into high-performance digital products using clean, scalable code.",
     categories: ["REACT/NEXT.JS", "CMS INTEGRATION", "E-COMMERCE"],
     images: ["/images/services/svc-4.webp", "/images/services/svc-5.webp"],
   },
@@ -40,7 +40,7 @@ const SERVICES: Service[] = [
     id: "04",
     title: "Digital Strategy",
     description:
-      "We provide the data-driven roadmap necessary to navigate the competitive landscape.",
+      "I provide the data-driven roadmap necessary to navigate the competitive landscape.",
     categories: ["MARKET ANALYSIS", "SEO AUDIT", "GROWTH HACKING"],
     images: ["/images/services/svc-6.webp", "/images/services/svc-7.webp"],
   },
@@ -50,16 +50,16 @@ export default function ServicesSection() {
   const [openId, setOpenId] = useState("01");
 
   return (
-    <section id="services" className="relative overflow-hidden bg-black text-white">
+    <section id="skills" className="relative overflow-hidden bg-black text-white">
       <div className="mx-auto max-w-[1600px] px-5 py-16 md:px-8 md:py-20 lg:px-10 lg:py-24">
         <div className="mb-2 md:mb-4">
           <p className="mb-6 flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase md:mb-8">
             <span className="inline-block h-3 w-px bg-white" aria-hidden />
-            What We Do
+            What I Do
           </p>
           <div className="flex items-end justify-between gap-6 border-b border-white/15 pb-6 md:pb-8">
             <h2 className="text-[clamp(3rem,8vw,6.5rem)] font-semibold leading-none tracking-[-0.04em]">
-              Services
+              Skills
             </h2>
             <span className="pb-1 text-[clamp(2rem,5vw,4rem)] font-semibold leading-none tracking-tight text-white/20">
               (04)

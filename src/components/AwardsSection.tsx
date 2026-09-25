@@ -11,7 +11,7 @@ const AWARD_GROUPS = [
     org: "Gridly",
     items: [
       { title: "Most Popular UI Kit", year: "2025" },
-      { title: "Top Tier Agency", year: "2024" },
+      { title: "Top Tier Creative", year: "2024" },
       { title: "Shot of the Year", year: "2023" },
     ],
   },
@@ -28,7 +28,7 @@ const AWARD_GROUPS = [
   },
   {
     org: "CSSLabs",
-    items: [{ title: "Best Digital Agency", year: "2024" }],
+    items: [{ title: "Best Digital Craft", year: "2024" }],
   },
 ];
 
@@ -40,7 +40,7 @@ export default function AwardsSection() {
       <div className="mx-auto max-w-[1600px] px-5 py-16 md:px-8 md:py-20 lg:px-10 lg:py-24">
         <p className="mb-6 flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase md:mb-8">
           <span className="inline-block h-3 w-px bg-white" aria-hidden />
-          What We Achieved
+          Recognition
         </p>
 
         <div className="mb-14 flex items-end justify-between gap-6 md:mb-20">
@@ -58,7 +58,7 @@ export default function AwardsSection() {
               Recognized Excellence
             </h3>
             <p className="mt-4 max-w-[34ch] text-[14px] leading-relaxed text-white/70 md:mt-5 md:text-[15px]">
-              Our commitment to quality has earned us accolades from the industry&apos;s most
+              A commitment to quality reflected in accolades from the industry&apos;s most
               prestigious boards.
             </p>
           </div>

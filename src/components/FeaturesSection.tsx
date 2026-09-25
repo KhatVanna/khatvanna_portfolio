@@ -9,7 +9,7 @@ const FEATURES = [
         Performance Engineering
       </>
     ),
-    body: 'Our engineering team prioritizes lean, "clean-code" architecture and advanced caching strategies',
+    body: 'My engineering approach prioritizes lean, "clean-code" architecture and advanced caching strategies',
     image: "/images/features/engineering.webp",
     wide: true,
   },
@@ -21,7 +21,7 @@ const FEATURES = [
         Design Systmes
       </>
     ),
-    body: "We don't just deliver static pages; we build living, breathing design systems.",
+    body: "I don't just deliver static pages; I build living, breathing design systems.",
     image: "/images/features/systems.webp",
     wide: false,
   },
@@ -33,7 +33,7 @@ const FEATURES = [
         User Experience (UX)
       </>
     ),
-    body: "Our design decisions are rooted in objective reality, not just creative intuition.",
+    body: "My design decisions are rooted in objective reality, not just creative intuition.",
     image: "/images/features/ux.webp",
     wide: false,
   },
@@ -68,7 +68,7 @@ export default function FeaturesSection() {
               <span className="text-black/35">In Industry</span>
             </h2>
             <p className="mt-4 max-w-[34ch] text-[14px] leading-relaxed text-black/45 md:text-[15px]">
-              Every project we take on is designed for long-term success.
+              Every project I take on is designed for long-term success.
             </p>
           </div>
         </div>

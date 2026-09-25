@@ -5,15 +5,15 @@ import { useState } from "react";
 const ITEMS = [
   {
     title: "User Research",
-    body: 'We conduct thorough stakeholder interviews, competitive audits, and user persona mapping to uncover the "why" behind your audience\'s behavior.',
+    body: 'I conduct thorough stakeholder interviews, competitive audits, and user persona mapping to uncover the "why" behind your audience\'s behavior.',
   },
   {
     title: "Wireframing",
-    body: 'We conduct thorough stakeholder interviews, competitive audits, and user persona mapping to uncover the "why" behind your audience\'s behavior.',
+    body: 'I conduct thorough stakeholder interviews, competitive audits, and user persona mapping to uncover the "why" behind your audience\'s behavior.',
   },
   {
     title: "Prototyping",
-    body: 'We conduct thorough stakeholder interviews, competitive audits, and user persona mapping to uncover the "why" behind your audience\'s behavior.',
+    body: 'I conduct thorough stakeholder interviews, competitive audits, and user persona mapping to uncover the "why" behind your audience\'s behavior.',
   },
 ];
 
@@ -26,7 +26,7 @@ export default function WhatWeDoSection() {
         <div className="mb-12 grid grid-cols-1 gap-6 border-b border-black/10 pb-10 md:mb-14 md:grid-cols-4 md:gap-8 md:pb-12">
           <p className="flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
             <span className="inline-block h-3 w-px bg-black" aria-hidden />
-            What We Do
+            What I Do
           </p>
           <p className="max-w-[36ch] text-[clamp(1.25rem,2.4vw,1.85rem)] font-medium leading-snug tracking-[-0.02em] text-neutral-400 md:col-span-3 md:col-start-2 lg:max-w-[42ch]">
             I believe great design is invisible; it should feel like a natural extension of the

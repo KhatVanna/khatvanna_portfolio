@@ -6,7 +6,7 @@ import Link from "next/link";
 const FAQS = [
   {
     q: "How long does a typical project take?",
-    a: "Our engagement timelines generally range from 4 to 12 weeks, depending on the specific complexity and scope of the digital product.",
+    a: "My project timelines generally range from 4 to 12 weeks, depending on the specific complexity and scope of the digital product.",
   },
   {
     q: "Do you offer post-launch support?",
@@ -14,15 +14,15 @@ const FAQS = [
   },
   {
     q: "Can you work with our existing dev team?",
-    a: 'Yes, we are highly experienced in integrated workflows and "frictionless handoffs." We utilize Figma as our primary design source of truth.',
+    a: 'Yes, I am highly experienced in integrated workflows and "frictionless handoffs." I use Figma as my primary design source of truth.',
   },
   {
     q: "What industries do you specialize in?",
-    a: "While our design principles are universal, we possess deep-rooted expertise in high-growth sectors such as Fintech, SaaS, AI-driven platforms.",
+    a: "While my design principles are universal, I have deep-rooted expertise in high-growth sectors such as Fintech, SaaS, AI-driven platforms.",
   },
   {
     q: "Is your design process collaborative?",
-    a: "Our process is built on radical transparency and iterative feedback. We begin with a deep-dive discovery phase to align on your business goals.",
+    a: "My process is built on radical transparency and iterative feedback. I begin with a deep-dive discovery phase to align on your business goals.",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function FaqSection() {
 
       <div className="relative z-10 mx-auto max-w-[1600px] px-5 py-16 md:px-8 md:py-20 lg:px-10 lg:py-24">
         <p className="mb-6 text-[11px] font-medium tracking-[0.16em] text-neutral-400 uppercase md:mb-8">
-          Ask Us
+          Ask Me
         </p>
 
         <h2 className="mb-10 text-[clamp(3rem,8vw,6rem)] font-semibold leading-none tracking-[-0.04em] md:mb-14">
@@ -90,7 +90,7 @@ export default function FaqSection() {
           </p>
           <div>
             <h3 className="text-[clamp(2rem,4vw,3.25rem)] font-semibold tracking-[-0.03em] uppercase">
-              Contact Us
+              Contact Me
             </h3>
             <Link
               href="/contact"

@@ -72,19 +72,19 @@ export default function ApproachSection() {
           <div className="md:col-span-2">
             <p className="mb-6 flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase md:mb-8">
               <span className="inline-block h-3 w-px bg-black" aria-hidden />
-              Our Approach
+              My Approach
             </p>
             <h2 className="max-w-[10ch] text-[clamp(2.75rem,7vw,5.5rem)] font-semibold leading-[0.95] tracking-[-0.04em]">
               Strategy-First
             </h2>
             <p className="mt-10 text-[13px] font-semibold tracking-[0.12em] uppercase md:mt-14">
-              Our Advantages Include
+              Advantages Include
             </p>
           </div>
 
           <div className="flex items-end md:col-span-1 md:col-start-3 md:pb-2">
             <p className="max-w-[36ch] text-[15px] leading-relaxed text-neutral-700 md:text-base">
-              We don&apos;t just &quot;make things pretty.&quot; We analyze user
+              I don&apos;t just &quot;make things pretty.&quot; I analyze user
               behavior and market trends to build digital products that drive
               measurable growth.
             </p>

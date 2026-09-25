@@ -85,7 +85,7 @@ const SECTIONS: PolicySection[] = [
   },
   {
     index: "08",
-    title: "Contact Us",
+    title: "Contact Me",
     body: "If you have any questions about this Privacy Policy, please contact me: hello@khatvanna.com",
   },
 ];

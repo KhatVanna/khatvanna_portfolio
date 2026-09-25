@@ -112,7 +112,7 @@ export const zenithCase: CaseStudy = {
     { label: "Client", value: "Zenith Brand" },
     { label: "Date", value: "Sept 2025" },
     { label: "Industry", value: "Virtual Gallery" },
-    { label: "Services", value: "Brand Identity  Web Development" },
+    { label: "Skills", value: "Brand Identity  Web Development" },
   ],
   overviewHeadline:
     "Northland Studio is an award-winning architectural collective defined by its commitment to brutalist minimalism and structural honesty.",
@@ -159,7 +159,7 @@ export const veloceCase: CaseStudy = {
     { label: "Client", value: "E-Commerce" },
     { label: "Date", value: "Feb 2025" },
     { label: "Industry", value: "Structural Honesty" },
-    { label: "Services", value: "Digital Strategy\nUI/UX Design" },
+    { label: "Skills", value: "Digital Strategy\nUI/UX Design" },
   ],
   overviewHeadline:
     "Northland Studio is an award-winning architectural collective defined by its commitment to brutalist minimalism and structural honesty.",
@@ -215,7 +215,7 @@ export const auraCase: CaseStudy = {
     { label: "Client", value: "Aura App" },
     { label: "Date", value: "June 2025" },
     { label: "Industry", value: "Architectural Collective" },
-    { label: "Services", value: "Digital Strategy  Brand Identity" },
+    { label: "Skills", value: "Digital Strategy  Brand Identity" },
   ],
   overviewHeadline:
     "Northland Studio is an award-winning architectural collective defined by its commitment to brutalist minimalism and structural honesty.",
@@ -270,7 +270,7 @@ export const stellarCase: CaseStudy = {
     { label: "Client", value: "Northland Studio" },
     { label: "Date", value: "Nov 2025" },
     { label: "Industry", value: "Architectural Collective" },
-    { label: "Services", value: "Brand Identity\nUI/UX Design" },
+    { label: "Skills", value: "Brand Identity\nUI/UX Design" },
   ],
   overviewHeadline:
     "Northland Studio is an award-winning architectural collective defined by its commitment to brutalist minimalism and structural honesty.",
@@ -319,7 +319,7 @@ export const lumaCase: CaseStudy = {
     { label: "Client", value: "Northland Studio" },
     { label: "Date", value: "May 2025" },
     { label: "Industry", value: "Architectural Collective" },
-    { label: "Services", value: "Brand Identity\nDigital Strategy" },
+    { label: "Skills", value: "Brand Identity\nDigital Strategy" },
   ],
   overviewHeadline:
     "Northland Studio is an award-winning architectural collective defined by its commitment to brutalist minimalism and structural honesty.",
@@ -374,7 +374,7 @@ export const northlandCase: CaseStudy = {
     { label: "Client", value: "Northland Studio" },
     { label: "Date", value: "July 2025" },
     { label: "Industry", value: "Architectural Collective" },
-    { label: "Services", value: "UI/UX Design\nWeb Development" },
+    { label: "Skills", value: "UI/UX Design\nWeb Development" },
   ],
   overviewHeadline:
     "Northland Studio is an award-winning architectural collective defined by its commitment to brutalist minimalism and structural honesty.",

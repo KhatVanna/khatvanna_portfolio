@@ -69,7 +69,7 @@ function IconPulse() {
 const CARDS = [
   {
     title: "Ideas With Purpose",
-    body: "Our portfolio spans a global landscape, delivering high-impact solutions to clients in over 20 countries.",
+    body: "My work spans a global landscape, delivering high-impact solutions to clients in over 20 countries.",
     level: 1,
     wide: true,
     Icon: IconBulb,
@@ -97,14 +97,14 @@ const CARDS = [
   },
   {
     title: "Fast Without Compromise",
-    body: "A focused process helps us move efficiently while maintaining standard.",
+    body: "A focused process helps me move efficiently while maintaining standard.",
     level: 5,
     wide: false,
     Icon: IconBolt,
   },
   {
     title: "Designed To Perform",
-    body: "We create work that looks distinctive while supporting stronger engagement and business growth.",
+    body: "I create work that looks distinctive while supporting stronger engagement and business growth.",
     level: 6,
     wide: true,
     Icon: IconPulse,
@@ -129,7 +129,7 @@ export default function WhatSetsUsApartSection() {
           <div className="md:col-span-2">
             <p className="flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase">
               <span className="inline-block h-3 w-px bg-black" aria-hidden />
-              Why Choose Us
+              Why Work With Me
             </p>
             <h2 className="mt-6 max-w-[10ch] text-[clamp(2.4rem,5vw,4.25rem)] font-semibold leading-[0.98] tracking-[-0.04em]">
               What Sets Us Apart
@@ -138,7 +138,7 @@ export default function WhatSetsUsApartSection() {
 
           <div className="flex items-end md:col-span-2 md:col-start-3">
             <p className="max-w-[40ch] text-[14px] leading-relaxed text-black/55 md:text-[15px]">
-              We combine clear thinking, strong ideas, and thoughtful execution to create work that
+              I combine clear thinking, strong ideas, and thoughtful execution to create work that
               feels distinctive and delivers real value.
             </p>
           </div>

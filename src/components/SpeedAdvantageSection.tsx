@@ -11,7 +11,7 @@ const IMAGES = [
 ];
 
 const BODY =
-  'In the digital realm, milliseconds matter. Our engineering team prioritizes lean, "clean-code" architecture and advanced caching strategies to ensure social achieves';
+  'In the digital realm, milliseconds matter. I prioritize lean, "clean-code" architecture and advanced caching strategies to ensure social achieves';
 
 function clamp(n: number, min = 0, max = 1) {
   return Math.min(max, Math.max(min, n));

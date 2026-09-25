@@ -25,6 +25,8 @@ const LIGHT_SECTION_IDS = [
   "studio",
   "approach",
   "why-us",
+  "skills",
+  "projects",
   "works",
   "testimonials",
   "team",
