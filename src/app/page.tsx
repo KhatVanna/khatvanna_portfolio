@@ -5,6 +5,7 @@ import FooterSection from "@/components/FooterSection";
 import HeroSection from "@/components/HeroSection";
 import MissionSection from "@/components/MissionSection";
 import ServicesSection from "@/components/ServicesSection";
+import ShowreelSection from "@/components/ShowreelSection";
 import SiteNav from "@/components/SiteNav";
 import TeamSection from "@/components/TeamSection";
 import TechStackSection from "@/components/TechStackSection";
@@ -26,13 +27,15 @@ export default function Home() {
       <ExperienceSection />
       {/* 06 Education & Languages */}
       <EducationSection />
-      {/* 07 Projects */}
+      {/* 07 Showreel */}
+      <ShowreelSection />
+      {/* 08 Projects */}
       <WorksSection />
-      {/* 08 Team */}
+      {/* 09 Team */}
       <TeamSection />
-      {/* 09 Mission */}
+      {/* 10 Mission */}
       <MissionSection />
-      {/* 10 Contact */}
+      {/* 11 Contact */}
       <FooterSection />
     </main>
   );
