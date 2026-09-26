@@ -1,36 +1,38 @@
 import AboutSection from "@/components/AboutSection";
-import ApproachSection from "@/components/ApproachSection";
-import AwardsSection from "@/components/AwardsSection";
-import BlogSection from "@/components/BlogSection";
-import FaqSection from "@/components/FaqSection";
+import EducationSection from "@/components/EducationSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import FooterSection from "@/components/FooterSection";
 import HeroSection from "@/components/HeroSection";
-import PricingSection from "@/components/PricingSection";
+import MissionSection from "@/components/MissionSection";
 import ServicesSection from "@/components/ServicesSection";
-import ShowreelSection from "@/components/ShowreelSection";
 import SiteNav from "@/components/SiteNav";
 import TeamSection from "@/components/TeamSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import TechStackSection from "@/components/TechStackSection";
 import WorksSection from "@/components/WorksSection";
 
 export default function Home() {
   return (
     <main>
       <SiteNav />
+      {/* 01 Hero */}
       <HeroSection />
+      {/* 02 About */}
       <AboutSection />
-      <ApproachSection />
-      <WhyChooseUsSection />
+      {/* 03 Skills */}
       <ServicesSection />
-      <ShowreelSection />
+      {/* 04 Tech Stack */}
+      <TechStackSection />
+      {/* 05 Experience */}
+      <ExperienceSection />
+      {/* 06 Education & Languages */}
+      <EducationSection />
+      {/* 07 Projects */}
       <WorksSection />
-      <AwardsSection />
-      <TestimonialsSection />
+      {/* 08 Team */}
       <TeamSection />
-      <PricingSection />
-      <BlogSection />
-      <FaqSection />
+      {/* 09 Mission */}
+      <MissionSection />
+      {/* 10 Contact */}
       <FooterSection />
     </main>
   );

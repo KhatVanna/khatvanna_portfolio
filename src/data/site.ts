@@ -34,8 +34,32 @@ export const SITE = {
     "JavaScript",
     "React",
     "Flutter",
+    "Dart",
+    "HTML/CSS",
+    "Tailwind",
+    "Node.js",
     "MySQL",
     "PostgreSQL",
+    "Firebase",
+    "Git",
+  ] as const,
+  techGroups: [
+    {
+      title: "Languages & Frameworks",
+      items: ["Python", "PHP", "Laravel", "JavaScript", "React", "Dart"],
+    },
+    {
+      title: "Frontend & Mobile",
+      items: ["HTML", "CSS", "Tailwind", "Flutter", "Firebase"],
+    },
+    {
+      title: "Databases",
+      items: ["MySQL", "PostgreSQL"],
+    },
+    {
+      title: "Tools",
+      items: ["Git", "GitHub", "VS Code", "Postman", "Vercel", "Netlify"],
+    },
   ] as const,
   languages: [
     { name: "Khmer", level: "Mother tongue" },

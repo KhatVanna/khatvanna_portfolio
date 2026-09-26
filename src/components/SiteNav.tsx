@@ -28,6 +28,8 @@ const LIGHT_SECTION_IDS = [
   "skills",
   "projects",
   "works",
+  "experience",
+  "education",
   "testimonials",
   "team",
   "blog",
@@ -74,7 +76,7 @@ function AnnouncementBar() {
     <div className="flex h-9 w-full items-center justify-center bg-black px-4 text-[11px] font-medium tracking-[0.18em] text-white uppercase">
       <p className="flex items-center gap-2">
         <span aria-hidden>•</span>
-        <span>Open to new opportunities</span>
+        <span>Open to work · Kalapak Code Team</span>
         <span aria-hidden>•</span>
         <Link href="/contact" className="underline-offset-2 hover:underline">
           Contact me

@@ -1,14 +1,12 @@
 import type { Metadata } from "next";
-import AboutNewsletterSection from "@/components/AboutNewsletterSection";
 import AboutTeamSection from "@/components/AboutTeamSection";
-import AwardsSection from "@/components/AwardsSection";
-import FeaturesSection from "@/components/FeaturesSection";
+import EducationSection from "@/components/EducationSection";
+import ExperienceSection from "@/components/ExperienceSection";
 import FooterSection from "@/components/FooterSection";
-import PhilosophySection from "@/components/PhilosophySection";
+import MissionSection from "@/components/MissionSection";
 import SiteNav from "@/components/SiteNav";
-import SpeedAdvantageSection from "@/components/SpeedAdvantageSection";
 import StudioSection from "@/components/StudioSection";
-import WhatSetsUsApartSection from "@/components/WhatSetsUsApartSection";
+import TechStackSection from "@/components/TechStackSection";
 
 export const metadata: Metadata = {
   title: "About — Khat Vanna",
@@ -21,13 +19,11 @@ export default function AboutUsPage() {
     <main>
       <SiteNav />
       <StudioSection />
-      <PhilosophySection />
-      <FeaturesSection />
-      <WhatSetsUsApartSection />
-      <AwardsSection />
-      <SpeedAdvantageSection />
+      <ExperienceSection />
+      <EducationSection />
+      <TechStackSection />
       <AboutTeamSection />
-      <AboutNewsletterSection />
+      <MissionSection />
       <FooterSection />
     </main>
   );
