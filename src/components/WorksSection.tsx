@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { BlurFade } from "@/components/ui/blur-fade";
+import { TextAnimate } from "@/components/ui/text-animate";
 
 const AVATARS = [
   "/images/avatar-1.webp",
@@ -123,18 +127,20 @@ export default function WorksSection() {
 
       <div className="relative z-10 mx-auto max-w-[1600px] px-5 py-16 md:px-8 md:py-20 lg:px-10 lg:py-24">
         {/* Projects Showcase intro */}
-        <div className="mb-6 flex items-start justify-between gap-6 text-[11px] font-medium tracking-[0.14em] uppercase md:mb-8">
-          <p className="leading-relaxed">
-            Projects
-            <br />
-            Showcase
-          </p>
-          <p className="text-right leading-relaxed">
-            Showcase
-            <br />
-            (&apos;26 Completed)
-          </p>
-        </div>
+        <BlurFade delay={0.05} inView direction="up" offset={12}>
+          <div className="mb-6 flex items-start justify-between gap-6 text-[11px] font-medium tracking-[0.14em] uppercase md:mb-8">
+            <p className="leading-relaxed">
+              Projects
+              <br />
+              Showcase
+            </p>
+            <p className="text-right leading-relaxed">
+              Showcase
+              <br />
+              (&apos;26 Completed)
+            </p>
+          </div>
+        </BlurFade>
 
         <div className="relative mx-auto max-w-[920px] py-8 text-center md:py-12">
           <Asterisk className="mx-auto mb-6 block text-3xl text-black/20 md:mb-8 md:text-4xl" />
@@ -176,54 +182,69 @@ export default function WorksSection() {
             </div>
           </div>
 
-          <h2 className="relative z-[2] text-[clamp(2.75rem,9vw,7rem)] font-semibold leading-[0.92] tracking-[-0.045em] uppercase">
-            <span className="block">More Than</span>
-            <span className="block">&ldquo;26+ Builds</span>
-            <span className="block text-[#ff5a1f]">Built</span>
-            <span className="block">Several</span>
-            <span className="block">Digital</span>
-            <span className="inline-flex items-end justify-center gap-3">
-              Projects
-              <span className="mb-2 inline-flex items-center justify-center rounded-xl bg-[#ff5a1f] px-3 py-2 text-black md:mb-3 md:rounded-2xl md:px-4 md:py-2.5">
-                <span className="text-[clamp(0.95rem,2vw,1.35rem)] font-semibold tracking-tight">
-                  (16)
+          <BlurFade delay={0.12} inView direction="up" offset={24}>
+            <h2 className="relative z-[2] text-[clamp(2.75rem,9vw,7rem)] font-semibold leading-[0.92] tracking-[-0.045em] uppercase">
+              <span className="block">More Than</span>
+              <span className="block">&ldquo;26+ Builds</span>
+              <span className="block text-[#ff5a1f]">Built</span>
+              <span className="block">Several</span>
+              <span className="block">Digital</span>
+              <span className="inline-flex items-end justify-center gap-3">
+                Projects
+                <span className="mb-2 inline-flex items-center justify-center rounded-xl bg-[#ff5a1f] px-3 py-2 text-black md:mb-3 md:rounded-2xl md:px-4 md:py-2.5">
+                  <span className="text-[clamp(0.95rem,2vw,1.35rem)] font-semibold tracking-tight">
+                    (16)
+                  </span>
                 </span>
               </span>
-            </span>
-          </h2>
+            </h2>
+          </BlurFade>
 
           <Asterisk className="mx-auto mt-10 block text-3xl text-black/20 md:mt-14 md:text-4xl" />
         </div>
 
         {/* Selected Work */}
         <div className="mt-16 grid grid-cols-1 gap-8 border-t border-black/10 pt-14 md:mt-24 md:grid-cols-2 md:gap-12 md:pt-16 lg:mt-28">
-          <div>
-            <h3 className="max-w-[10ch] text-[clamp(2rem,4vw,3.25rem)] font-semibold leading-[1.05] tracking-[-0.035em] uppercase">
-              Projects
-            </h3>
-            <div className="mt-6 flex items-center">
-              {AVATARS.map((src, i) => (
-                <div
-                  key={src}
-                  className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-white bg-neutral-200"
-                  style={{ marginLeft: i === 0 ? 0 : -10, zIndex: AVATARS.length - i }}
-                >
-                  <Image src={src} alt="" fill sizes="40px" className="object-cover" />
-                </div>
-              ))}
-              <div
-                className="relative z-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-[#e4e4e4] text-[10px] font-semibold"
-                style={{ marginLeft: -10 }}
+          <BlurFade delay={0.1} inView direction="up" offset={18}>
+            <div>
+              <TextAnimate
+                as="h3"
+                by="word"
+                animation="blurInUp"
+                startOnView
+                once
+                duration={0.35}
+                className="max-w-[10ch] text-[clamp(2rem,4vw,3.25rem)] font-semibold leading-[1.05] tracking-[-0.035em] uppercase"
+                segmentClassName="mr-[0.2em] inline-block"
               >
-                23K
+                Projects
+              </TextAnimate>
+              <div className="mt-6 flex items-center">
+                {AVATARS.map((src, i) => (
+                  <div
+                    key={src}
+                    className="relative h-10 w-10 overflow-hidden rounded-full border-2 border-white bg-neutral-200"
+                    style={{ marginLeft: i === 0 ? 0 : -10, zIndex: AVATARS.length - i }}
+                  >
+                    <Image src={src} alt="" fill sizes="40px" className="object-cover" />
+                  </div>
+                ))}
+                <div
+                  className="relative z-0 flex h-10 w-10 items-center justify-center rounded-full border-2 border-white bg-[#e4e4e4] text-[10px] font-semibold"
+                  style={{ marginLeft: -10 }}
+                >
+                  23K
+                </div>
               </div>
             </div>
-          </div>
-          <p className="max-w-[48ch] self-end text-[15px] leading-relaxed text-neutral-500 md:text-base">
-            Explore a curated gallery showcase. Each project is a testament to a commitment to
-            high-end craftsmanship, transforming complex business challenges into streamlined
-            digital experiences that resonate with a global audience.
-          </p>
+          </BlurFade>
+          <BlurFade delay={0.2} inView direction="up" offset={18}>
+            <p className="max-w-[48ch] self-end text-[15px] leading-relaxed text-neutral-500 md:text-base">
+              Explore a curated gallery showcase. Each project is a testament to a commitment to
+              high-end craftsmanship, transforming complex business challenges into streamlined
+              digital experiences that resonate with a global audience.
+            </p>
+          </BlurFade>
         </div>
 
         <div className="mt-12 flex items-center justify-between gap-4 border-b border-black/10 pb-4 md:mt-16">
@@ -275,15 +296,24 @@ export default function WorksSection() {
             );
 
             return (
-              <article key={project.title} className={i % 2 === 1 ? "md:mt-16" : undefined}>
-                {"href" in project && project.href ? (
-                  <Link href={project.href} className="block transition-opacity hover:opacity-90">
-                    {card}
-                  </Link>
-                ) : (
-                  card
-                )}
-              </article>
+              <BlurFade
+                key={project.title}
+                delay={0.1 + i * 0.1}
+                inView
+                direction="up"
+                offset={28}
+                className={i % 2 === 1 ? "md:mt-16" : undefined}
+              >
+                <article>
+                  {"href" in project && project.href ? (
+                    <Link href={project.href} className="block transition-opacity hover:opacity-90">
+                      {card}
+                    </Link>
+                  ) : (
+                    card
+                  )}
+                </article>
+              </BlurFade>
             );
           })}
         </div>

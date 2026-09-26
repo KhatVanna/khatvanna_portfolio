@@ -73,15 +73,24 @@ const LIGHT_SECTION_IDS = [
 
 function AnnouncementBar() {
   return (
-    <div className="flex h-9 w-full items-center justify-center bg-black px-4 text-[11px] font-medium tracking-[0.18em] text-white uppercase">
-      <p className="flex items-center gap-2">
-        <span aria-hidden>•</span>
-        <span>Open to work · Kalapak Code Team</span>
-        <span aria-hidden>•</span>
-        <Link href="/contact" className="underline-offset-2 hover:underline">
+    <div className="flex h-8 w-full items-center justify-center overflow-hidden bg-black px-3 text-[10px] font-medium tracking-[0.1em] text-white uppercase sm:h-9 sm:px-4 sm:text-[11px] sm:tracking-[0.18em]">
+      <p className="flex max-w-full items-center gap-1.5 whitespace-nowrap sm:gap-2">
+        <span aria-hidden className="shrink-0">
+          •
+        </span>
+        <span className="truncate">
+          <span className="sm:hidden">Open to work</span>
+          <span className="hidden sm:inline">Open to work · Kalapak Code Team</span>
+        </span>
+        <span aria-hidden className="shrink-0">
+          •
+        </span>
+        <Link href="/contact" className="shrink-0 underline-offset-2 hover:underline">
           Contact me
         </Link>
-        <span aria-hidden>•</span>
+        <span aria-hidden className="hidden shrink-0 sm:inline">
+          •
+        </span>
       </p>
     </div>
   );
@@ -289,14 +298,14 @@ export default function SiteNav() {
       <div className="fixed inset-x-0 top-0 z-50">
         <div
           className={`overflow-hidden transition-[max-height,opacity] duration-300 ${
-            scrolled ? "max-h-0 opacity-0" : "max-h-9 opacity-100"
+            scrolled ? "max-h-0 opacity-0" : "max-h-8 opacity-100 sm:max-h-9"
           }`}
         >
           <AnnouncementBar />
         </div>
 
         <header
-          className={`flex items-start justify-between gap-4 px-5 py-5 transition-colors duration-300 md:px-8 md:py-5 lg:px-10 ${text} ${
+          className={`flex items-start justify-between gap-3 px-4 py-4 transition-colors duration-300 sm:gap-4 sm:px-5 sm:py-5 md:px-8 md:py-5 lg:px-10 ${text} ${
             scrolled
               ? darkText
                 ? "bg-white/85 backdrop-blur-md"
@@ -304,10 +313,10 @@ export default function SiteNav() {
               : "bg-transparent"
           }`}
         >
-          <div className="flex items-start gap-8 lg:gap-14">
+          <div className="flex min-w-0 items-start gap-8 lg:gap-14">
             <Link
               href="/"
-              className="text-[1.35rem] font-semibold tracking-tight md:text-[1.5rem]"
+              className="truncate text-[1.2rem] font-semibold tracking-tight sm:text-[1.35rem] md:text-[1.5rem]"
             >
               {SITE.name}
             </Link>

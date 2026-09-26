@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
-type Service = {
+type Skill = {
   id: string;
   title: string;
   description: string;
@@ -11,7 +11,7 @@ type Service = {
   images: [string, string];
 };
 
-const SERVICES: Service[] = [
+const SKILLS: Skill[] = [
   {
     id: "01",
     title: "Web Development",
@@ -48,10 +48,77 @@ const SERVICES: Service[] = [
 
 export default function ServicesSection() {
   const [openId, setOpenId] = useState("01");
+  const [hoveredId, setHoveredId] = useState<string | null>(null);
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const sectionRef = useRef<HTMLElement>(null);
+
+  useEffect(() => {
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced) return;
+
+    let raf = 0;
+
+    const update = () => {
+      cancelAnimationFrame(raf);
+      raf = requestAnimationFrame(() => {
+        const section = sectionRef.current;
+        if (!section) return;
+
+        const sectionRect = section.getBoundingClientRect();
+        const vh = window.innerHeight;
+
+        if (sectionRect.bottom < vh * 0.18) {
+          setOpenId(SKILLS[SKILLS.length - 1].id);
+          return;
+        }
+        if (sectionRect.top > vh * 0.5) {
+          setOpenId(SKILLS[0].id);
+          return;
+        }
+
+        // Conax: open the last row whose header has crossed the upper trigger line
+        const triggerY = vh * 0.28;
+        let active = SKILLS[0].id;
+
+        itemRefs.current.forEach((el, i) => {
+          if (!el) return;
+          if (el.getBoundingClientRect().top <= triggerY) {
+            active = SKILLS[i].id;
+          }
+        });
+
+        setOpenId(active);
+      });
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("resize", update);
+    return () => {
+      cancelAnimationFrame(raf);
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("resize", update);
+    };
+  }, []);
 
   return (
-    <section id="skills" className="relative overflow-hidden bg-black text-white">
-      <div className="mx-auto max-w-[1600px] px-5 py-16 md:px-8 md:py-20 lg:px-10 lg:py-24">
+    <section
+      id="skills"
+      ref={sectionRef}
+      className="relative z-10 overflow-hidden bg-black text-white"
+    >
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 z-0 hidden grid-cols-4 md:grid"
+      >
+        <div className="border-r border-white/8" />
+        <div className="border-r border-white/8" />
+        <div className="border-r border-white/8" />
+        <div />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-[1600px] px-5 py-16 md:px-8 md:py-20 lg:px-10 lg:py-24">
+        {/* Header */}
         <div className="mb-2 md:mb-4">
           <p className="mb-6 flex items-center gap-2 text-[11px] font-medium tracking-[0.16em] uppercase md:mb-8">
             <span className="inline-block h-3 w-px bg-white" aria-hidden />
@@ -67,80 +134,135 @@ export default function ServicesSection() {
           </div>
         </div>
 
+        {/* Accordion — Conax style */}
         <div>
-          {SERVICES.map((service) => {
-            const isOpen = openId === service.id;
+          {SKILLS.map((skill, index) => {
+            const isOpen = openId === skill.id;
+            const isHot = isOpen || hoveredId === skill.id;
 
             return (
-              <div key={service.id} className="border-b border-white/15">
+              <div
+                key={skill.id}
+                ref={(el) => {
+                  itemRefs.current[index] = el;
+                }}
+                className="border-b border-white/15"
+              >
                 <button
                   type="button"
-                  onClick={() => setOpenId(isOpen ? "" : service.id)}
+                  onClick={() => setOpenId(skill.id)}
+                  onMouseEnter={() => setHoveredId(skill.id)}
+                  onMouseLeave={() => setHoveredId(null)}
                   aria-expanded={isOpen}
                   className="grid w-full grid-cols-[auto_1fr_auto] items-start gap-4 py-6 text-left md:grid-cols-[7.5rem_1fr_auto] md:gap-10 md:py-8 lg:grid-cols-[9rem_1fr_auto] lg:gap-14"
                 >
                   <span
-                    className={`pt-1 text-[clamp(1.75rem,3.5vw,3rem)] font-semibold leading-none tracking-tight transition-colors duration-300 ${
-                      isOpen ? "text-white" : "text-white/25"
+                    className={`pt-1 text-[clamp(1.75rem,3.5vw,3rem)] font-semibold leading-none tracking-tight transition-colors duration-500 ${
+                      isHot ? "text-white" : "text-white/18"
                     }`}
                   >
-                    {service.id}.
+                    {skill.id}.
                   </span>
 
                   <span className="min-w-0">
                     <span className="inline-flex flex-wrap items-start gap-x-1.5">
-                      <span className="text-[clamp(1.5rem,3.2vw,2.75rem)] font-semibold leading-[1.05] tracking-[-0.03em]">
-                        {service.title}
+                      <span
+                        className={`text-[clamp(1.5rem,3.2vw,2.75rem)] font-semibold leading-[1.05] tracking-[-0.03em] transition-colors duration-500 ${
+                          isHot ? "text-white" : "text-white/55"
+                        }`}
+                      >
+                        {skill.title}
                       </span>
-                      <sup className="mt-2 text-[0.65rem] font-medium tracking-normal text-white/45 md:mt-3 md:text-xs">
-                        ({service.id})
+                      <sup className="mt-2 text-[0.65rem] font-medium tracking-normal text-white/40 md:mt-3 md:text-xs">
+                        ({skill.id})
                       </sup>
                     </span>
                   </span>
 
                   <span
-                    className="flex h-8 w-8 items-center justify-center pt-1 text-2xl leading-none text-white md:pt-2"
+                    className="relative mt-1 flex h-8 w-8 items-center justify-center text-[1.75rem] leading-none text-white md:mt-2"
                     aria-hidden
                   >
-                    {isOpen ? "−" : "+"}
+                    <span
+                      className={`absolute transition-all duration-400 ${
+                        isOpen ? "rotate-0 scale-100 opacity-100" : "rotate-90 scale-75 opacity-0"
+                      }`}
+                    >
+                      −
+                    </span>
+                    <span
+                      className={`absolute transition-all duration-400 ${
+                        isOpen ? "-rotate-90 scale-75 opacity-0" : "rotate-0 scale-100 opacity-100"
+                      }`}
+                    >
+                      +
+                    </span>
                   </span>
                 </button>
 
                 <div
-                  className={`grid transition-[grid-template-rows] duration-500 ease-out ${
+                  className={`grid transition-[grid-template-rows] duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] ${
                     isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
                   }`}
                 >
                   <div className="overflow-hidden">
-                    <div className="pb-8 md:pb-10 md:pl-[calc(7.5rem+2.5rem)] lg:pl-[calc(9rem+3.5rem)]">
+                    <div
+                      className={`pb-10 md:pb-14 md:pl-[calc(7.5rem+2.5rem)] lg:pl-[calc(9rem+3.5rem)] ${
+                        isOpen ? "opacity-100" : "opacity-0"
+                      } transition-opacity duration-500`}
+                    >
+                      {/* Two visuals */}
                       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:gap-4">
-                        {service.images.map((src, i) => (
+                        {skill.images.map((src, i) => (
                           <div
                             key={src}
-                            className="relative aspect-16/10 overflow-hidden rounded-xl md:rounded-2xl"
+                            className="relative aspect-16/10 overflow-hidden rounded-xl bg-white/5 md:rounded-2xl"
+                            style={{
+                              transform: isOpen
+                                ? "translate3d(0, 0, 0) scale(1)"
+                                : "translate3d(0, 32px, 0) scale(0.97)",
+                              opacity: isOpen ? 1 : 0,
+                              transition: `transform 0.85s cubic-bezier(0.22, 1, 0.36, 1) ${
+                                60 + i * 100
+                              }ms, opacity 0.6s ease ${60 + i * 100}ms`,
+                            }}
                           >
                             <Image
                               src={src}
-                              alt={`${service.title} visual ${i + 1}`}
+                              alt={`${skill.title} visual ${i + 1}`}
                               fill
                               sizes="(max-width: 640px) 100vw, 40vw"
-                              className="object-cover"
+                              className="object-cover transition-transform duration-700 ease-out hover:scale-[1.04]"
                             />
                           </div>
                         ))}
                       </div>
 
-                      <p className="mt-5 max-w-[54ch] text-[14px] leading-relaxed text-white/85 md:mt-6 md:text-[15px]">
-                        {service.description}
+                      <p
+                        className="mt-5 max-w-[54ch] text-[14px] leading-relaxed text-white/80 md:mt-6 md:text-[15px]"
+                        style={{
+                          opacity: isOpen ? 1 : 0,
+                          transform: isOpen ? "translateY(0)" : "translateY(14px)",
+                          transition: "opacity 0.55s ease 180ms, transform 0.55s ease 180ms",
+                        }}
+                      >
+                        {skill.description}
                       </p>
 
-                      <div className="mt-6 md:mt-8">
-                        <p className="mb-3 text-sm text-white/65">Categories</p>
+                      <div
+                        className="mt-6 md:mt-8"
+                        style={{
+                          opacity: isOpen ? 1 : 0,
+                          transform: isOpen ? "translateY(0)" : "translateY(14px)",
+                          transition: "opacity 0.55s ease 260ms, transform 0.55s ease 260ms",
+                        }}
+                      >
+                        <p className="mb-3 text-sm text-white/55">Categories</p>
                         <div className="flex flex-wrap gap-2.5">
-                          {service.categories.map((cat) => (
+                          {skill.categories.map((cat) => (
                             <span
                               key={cat}
-                              className="rounded-full border border-white/20 bg-white/5 px-4 py-2 text-[11px] font-medium tracking-[0.08em] text-white uppercase"
+                              className="rounded-full border border-white/20 bg-white/[0.04] px-4 py-2 text-[11px] font-medium tracking-[0.08em] text-white uppercase transition-colors hover:border-white/40 hover:bg-white/10"
                             >
                               {cat}
                             </span>

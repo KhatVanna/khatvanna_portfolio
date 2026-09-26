@@ -4,6 +4,7 @@ import ExperienceSection from "@/components/ExperienceSection";
 import FooterSection from "@/components/FooterSection";
 import HeroSection from "@/components/HeroSection";
 import MissionSection from "@/components/MissionSection";
+import PageIntro from "@/components/PageIntro";
 import ServicesSection from "@/components/ServicesSection";
 import ShowreelSection from "@/components/ShowreelSection";
 import SiteNav from "@/components/SiteNav";
@@ -14,28 +15,51 @@ import WorksSection from "@/components/WorksSection";
 export default function Home() {
   return (
     <main>
+      <PageIntro />
       <SiteNav />
-      {/* 01 Hero */}
-      <HeroSection />
-      {/* 02 About */}
-      <AboutSection />
-      {/* 03 Skills */}
-      <ServicesSection />
-      {/* 04 Tech Stack */}
-      <TechStackSection />
-      {/* 05 Experience */}
-      <ExperienceSection />
-      {/* 06 Education & Languages */}
-      <EducationSection />
-      {/* 07 Showreel */}
-      <ShowreelSection />
-      {/* 08 Projects */}
+
+      {/* Conax: sticky Hero, About slides over */}
+      <div className="relative">
+        <div className="sticky top-0 z-0">
+          <HeroSection />
+        </div>
+        <div className="relative z-10">
+          <AboutSection />
+        </div>
+      </div>
+
+      {/* Skills slides over About */}
+      <div className="relative z-10">
+        <ServicesSection />
+      </div>
+
+      {/* Tech (dark) pinned; Experience (white) slides over */}
+      <div className="relative">
+        <div className="sticky top-0 z-0">
+          <TechStackSection />
+        </div>
+        <div className="relative z-10">
+          <ExperienceSection />
+        </div>
+      </div>
+
+      {/* Education (gray) over Experience; Showreel (black) over Education */}
+      <div className="relative">
+        <div className="sticky top-0 z-0">
+          <EducationSection />
+        </div>
+        <div className="relative z-10">
+          <ShowreelSection />
+        </div>
+      </div>
+
+      {/* Projects */}
       <WorksSection />
-      {/* 09 Team */}
+      {/* Team */}
       <TeamSection />
-      {/* 10 Mission */}
+      {/* Mission */}
       <MissionSection />
-      {/* 11 Contact */}
+      {/* Contact */}
       <FooterSection />
     </main>
   );
